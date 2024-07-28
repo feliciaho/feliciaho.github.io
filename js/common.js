@@ -22,28 +22,14 @@ $("body, html").animate(
 );
 });
 
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.to(".clusterGreat", {
-//   scrollTrigger: {
-//     trigger: ".clusterGreat",
-//     start: "top center", // 动画开始位置
-//     end: "bottom center", // 动画结束位置
-//     scrub: 1, // 平滑滚动
-//     markers: true // 显示滚动触发点的标记
-//   },
-//   x: 500, // 动画效果
-//   rotation: 360, // 动画效果
-//   duration: 3
-// });
 gsap.set(".title1", { scale: 0.5 });
 gsap.set(".title2", { scale: 0.5});
 gsap.set(".text1", { yPercent: -20 ,scale: 0.8});
 gsap.set(".imgBox", { yPercent: 20});
 
 gsap.to(".titleBig", {
-  xPercent: -200,
-  scale: 4,
+  xPercent: -100,
+  scale: 2,
   opacity: 0,
   ease: "none",
   start: "top center", 
@@ -100,8 +86,8 @@ gsap.to(".title2", {
   }, 
 });
 gsap.to(".text1", {
-  yPercent: 40,
-  scale: 1.2,
+  yPercent: 10,
+  scale: 1.1,
   ease: "none",
   start: "top center", 
   end: "bottom center", 
