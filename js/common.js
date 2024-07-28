@@ -75,21 +75,14 @@ gsap.to(".title2", {
     scrub: 1
   }, 
 });
-gsap.to(".text1", {
-  yPercent: 10,
-  ease: "none",
-  start: "top center", 
-  end: "bottom center", 
-  scrollTrigger: {
-    scrub: 1
-  }, 
-});
-document.querySelectorAll('.text1').forEach((imgBox) => {
-  gsap.to(imgBox, {
+
+document.querySelectorAll('.text1').forEach((text1) => {
+  gsap.to(text1, {
     yPercent: 10,
     ease: "none",
+    scale: 1.1,
     scrollTrigger: {
-      trigger: imgBox,
+      trigger: text1,
       scrub: 1
     }
   });
