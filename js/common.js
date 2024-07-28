@@ -26,8 +26,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.set(".title1", { scale: 0.5 });
 gsap.set(".title2", { scale: 0.5});
-gsap.set(".text1", { yPercent: -20 ,scale: 0.8});
-gsap.set(".imgBox", { yPercent: 20});
+gsap.set(".text1", { yPercent: -10 ,scale: 0.8});
+gsap.set(".imgBox", { yPercent: 10});
 
 gsap.to(".titleBig", {
   xPercent: -100,
@@ -86,7 +86,7 @@ gsap.to(".text1", {
 });
 document.querySelectorAll('.text1').forEach((imgBox) => {
   gsap.to(imgBox, {
-    yPercent: 20,
+    yPercent: 10,
     ease: "none",
     scrollTrigger: {
       trigger: imgBox,
@@ -97,7 +97,7 @@ document.querySelectorAll('.text1').forEach((imgBox) => {
 
 document.querySelectorAll('.imgBox').forEach((imgBox) => {
   gsap.to(imgBox, {
-    yPercent: -20,
+    yPercent: -10,
     ease: "none",
     scrollTrigger: {
       trigger: imgBox,
