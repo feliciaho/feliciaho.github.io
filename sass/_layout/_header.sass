@@ -1,61 +1,92 @@
 body
-    background-image: url("../img/BG.jpg")
+    background-image: url("../images/BG.jpg")
     color: white
     text-align: center
     font-family: "the-seasons", sans-serif
-    font-weight: 300
     font-style: normal
     line-height: 1.4
-    .sideBar
-        position: fixed
-        right: 0
-        margin: 20px 0
-        z-index: 4
-        ul
-            display: flex
-            flex-direction: column
-            li
-                border-bottom: 1px solid rgba(255, 255, 255, 0.5)
-                padding: 20px
-                a
-                    font-size: 20px
-                    color: #ffff
-                    &:hover, &.active
-                        color: #ffc5e7
     #tsparticles
         position: fixed
         z-index: 1
         width: 100%
         height: 100%
         pointer-events: none
+    .sideBar
+        position: fixed
+        right: 0
+        padding: 5vh 0
+        z-index: 4
+        background: linear-gradient(to left, rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0))
+        +media-pc-2
+            padding: 1vh 0 0 0
+        ul
+            display: flex
+            flex-direction: column
+            li
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+                padding: 2vh
+                +media-pc-2
+                    padding: 1vh
+                a
+                    font-size: 20px
+                    color: #ffff
+                    &:hover, &.active
+                        color: #ffc5e7
+                    +media-sp
+                        font-size: 0.8rem
     header
-        padding: 0 0 0 5vw
         height: 100vh
         position: relative
         display: flex
         flex-direction: column
         justify-content: center
         align-items: flex-start
+        padding: 0 0 0 5vw
         h1
             position: relative
             margin-bottom: -3rem
             font-size: 11vw
             font-style: Light
             letter-spacing: 2rem
+            +media-pc-2
+                margin-bottom: unset
+            +media-sp
+                padding: uset
+                margin-bottom: unset
+                letter-spacing: .8rem
         h2
             font-size: 4vw
             font-style: italic
             font-weight: 300
             color: #ffc5e7
             letter-spacing: .5rem
+            +media-sp
+                padding: uset
+                lletter-spacing: .3rem
+                font-size: 5vw
+        .scrollBox
+            font-size: 50px
+            position: absolute
+            bottom: 15vh
+            left: 50vw
+            margin-left: -50px
+            +media-sp
+                font-size: 20px
+                margin-left: -20px
+                bottom: 10vh
     section
-        margin-top: 200px
+        margin-top: 30vh
+        +media-sp
+            margin-top: 10vh
         h1
             color: white
             font-size: 5vw
             font-weight: 700
             color: #ffc5e7
             margin: 50px
+            +media-sp
+                margin: 20px
+                font-size: 40px
         &.s1
             position: relative
             display: flex
@@ -67,12 +98,16 @@ body
                 border-bottom: 1px solid rgba(255, 255, 255, 0.5)
                 color: #ffc5e7
                 justify-content: center
-                padding: 100px 0
+                padding: 15vh 0
                 flex-wrap: wrap
                 &:nth-child(odd)
                     flex-direction: row-reverse
                     .text1
-                        margin-left: 50px
+                        padding-left: 50px
+                        +media-pc-2
+                            padding-left: unset
+                +media-pc-2
+                    padding: 5vh 0
                 label
                     text-align: center
                     width: 120px
@@ -80,6 +115,9 @@ body
                     padding: 5px 0px
                     font-size: 18px
                     border: 1px solid #ffff
+                    +media-sp
+                        font-size: 12px
+                        width: 80px
                     &.seemore
                         border: unset
                         color: #000
@@ -92,6 +130,9 @@ body
                     flex-wrap: wrap
                     align-items: flex-start
                     align-content: center
+                    +media-pc-2
+                        width: 100%
+                        align-content: flex-start
                     span
                         color: #ffc5e7
                         font-size: 23px
@@ -99,21 +140,36 @@ body
                         border-left: 1px solid #ffc5e7
                         padding: 0 10px
                         margin: 0 10px
+                        +media-pc-2
+                            font-size: 20px
+                        +media-sp
+                            font-size: 18px
                     h2
                         font-size: 60px
                         margin: 20px 0
+                        +media-pc-2
+                            font-size: 35px
+                        +media-sp
+                            font-size: 30px
                     p
                         text-align: center
                         font-size: 30px
                         margin: 10px 0
                         text-align: start
                         color: #ffc5e7
+                        +media-pc-2
+                            font-size: 25px
+                        +media-sp
+                            font-size: 20px
                 .imgBox
                     position: relative
                     overflow: hidden
-                    max-width: 50%
+                    max-width: 60%
                     border-radius: 20px
                     z-index: 2
+                    +media-pc-2
+                        max-width: unset
+                        margin: 5vh 0
                     a
                         z-index: 3
                         cursor: pointer
@@ -148,7 +204,9 @@ body
             align-items: center
             width: 100%
             height: 100%
-            margin-bottom: 30vh
+            margin-bottom: 20vh
+            +media-pc-2
+                margin-bottom: 10vh
             .swiper
                 width: 100%
                 padding-top: 50px
@@ -156,10 +214,14 @@ body
                 &-slide
                     background-position: center
                     background-size: cover
-                    width: 600px
+                    width: 700px
                     height: auto
                     text-align: center
                     margin: auto -20px
+                    +media-pc-2
+                        width: 400px
+                    +media-narrow
+                        width: 350px
                 &-slide img
                     display: inline-block
                     width: 100%
@@ -182,3 +244,7 @@ body
                 transition: .2s linear
                 &:hover
                     color: rgba(255, 255, 255, 0.5)
+                +media-sp
+                    font-size: 20px
+                    margin: 0 auto
+                    width: 80vw
