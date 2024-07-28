@@ -22,6 +22,8 @@ $("body, html").animate(
 );
 });
 
+gsap.registerPlugin(ScrollTrigger);
+
 gsap.set(".title1", { scale: 0.5 });
 gsap.set(".title2", { scale: 0.5});
 gsap.set(".text1", { yPercent: -20 ,scale: 0.8});
@@ -42,18 +44,6 @@ gsap.to(".titleBig", {
 gsap.to(".texttransform", {
   xPercent: 200,
   scale: 5,
-  opacity: 0,
-  ease: "none",
-  start: "top center", 
-  end: "bottom center", 
-  scrollTrigger: {
-    scrub: 1
-  }, 
-});
-
-gsap.to(".scrollBox", {
-  yPercent: 1,
-  scale: 0.1,
   opacity: 0,
   ease: "none",
   start: "top center", 
@@ -87,7 +77,6 @@ gsap.to(".title2", {
 });
 gsap.to(".text1", {
   yPercent: 10,
-  scale: 1.1,
   ease: "none",
   start: "top center", 
   end: "bottom center", 
@@ -95,10 +84,24 @@ gsap.to(".text1", {
     scrub: 1
   }, 
 });
-gsap.to(".imgBox", {
-  yPercent: -20,
-  ease: "none",
-  scrollTrigger: {
-    scrub: 1
-  }, 
+document.querySelectorAll('.text1').forEach((imgBox) => {
+  gsap.to(imgBox, {
+    yPercent: 20,
+    ease: "none",
+    scrollTrigger: {
+      trigger: imgBox,
+      scrub: 1
+    }
+  });
+});
+
+document.querySelectorAll('.imgBox').forEach((imgBox) => {
+  gsap.to(imgBox, {
+    yPercent: -20,
+    ease: "none",
+    scrollTrigger: {
+      trigger: imgBox,
+      scrub: 1
+    }
+  });
 });

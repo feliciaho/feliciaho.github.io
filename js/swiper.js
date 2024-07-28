@@ -19,7 +19,7 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false,
   },
   loop: true,
-  mousewheel: true,
+  // mousewheel: true,
 });
 // Pause autoplay on hover
 const swiperContainer = document.querySelector('.swiper-wrapper');
