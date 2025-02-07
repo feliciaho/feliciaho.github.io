@@ -1,102 +1,35 @@
 // 側選單
-$(".sideBar a[href^='#']").on("click", function (e) {
-    // store hash
-    var hash = this.hash;
-    console.log(hash);
-  
-    // animate
-    $("html, body").animate(
-      {
-        scrollTop: $(hash).offset().top - 40,
-      },
-      800,
-    );
-  });
-  
-$(".title3").click(function () {
-$("body, html").animate(
-    {
-    scrollTop: 0,
-    },
-    1000
-);
-});
+const App = {
+  data() {
+    return {
+      projects: [
+        {
+          type: "EOV",
+          name: "official website",
+          skills: ["Pug", "SASS", "jQuery"],
+          webUrl: "https://eov.mangot5.com/eov/index",
+          githubUrl: "https://github.com/feliciaho/eov",
+          img : "/images/eovBanner.png",
+        },
+        {
+          type: "Ghost.online",
+          name: "Christmas website",
+          skills: ["HTML", "SCSS", "jQuery" ,"RESTful API"],
+          webUrl: "https://go.digeam.com/event/20231220/",
+          githubUrl: "https://github.com/feliciaho/eov",
+          img : "/images/ghostBanner.png",
+        },
+        {
+          type: "Cabel.online",
+          name: "Christmas website",
+          skills: ["HTML", "SCSS", "jQuery", "Vue" ,"RESTful API"],
+          webUrl: "",
+          githubUrl: "https://github.com/feliciaho/eov",
+          img : "/images/ghostBanner.png",
+        },
 
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.set(".title1", { scale: 0.5 });
-gsap.set(".title2", { scale: 0.5});
-gsap.set(".text1", { yPercent: -10  ,scale: 1});
-gsap.set(".imgBox", { yPercent: 10 });
-
-gsap.to(".titleBig", {
-  xPercent: -100,
-  scale: 2,
-  opacity: 0,
-  ease: "none",
-  start: "top center", 
-  end: "bottom center", 
-  scrollTrigger: {
-    scrub: 1
-  }, 
-});
-
-gsap.to(".texttransform", {
-  xPercent: 200,
-  scale: 5,
-  opacity: 0,
-  ease: "none",
-  start: "top center", 
-  end: "bottom center", 
-  scrollTrigger: {
-    scrub: 1
-  }, 
-});
-
-gsap.to(".title1", {
-  yPercent: 5,
-  scale: 1,
-  ease: "none",
-  start: "top center", 
-  end: "bottom center",
-  scrollTrigger: {
-    trigger: ".title1",
-    scrub: 1
-  }, 
-});
-gsap.to(".title2", {
-  yPercent: 5,
-  scale: 1,
-  ease: "none",
-  start: "top center", 
-  end: "bottom center", 
-  scrollTrigger: {
-    trigger: ".title2",
-    scrub: 1
-  }, 
-});
-
-document.querySelectorAll('.text1').forEach((text1) => {
-  gsap.to(text1, {
-    yPercent: 10,
-    ease: "none",
-    scale: 0.9,
-    opacity: 0.9,
-    scrollTrigger: {
-      trigger: text1,
-      scrub: 1
-    }
-  });
-});
-
-document.querySelectorAll('.imgBox').forEach((imgBox) => {
-  gsap.to(imgBox, {
-    yPercent: -10,
-    ease: "none",
-    scale: 1,
-    scrollTrigger: {
-      trigger: imgBox,
-      scrub: 1
-    }
-  });
-});
+      ],
+    };
+  },
+};
+Vue.createApp(App).mount("#app");

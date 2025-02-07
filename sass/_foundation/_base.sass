@@ -18,7 +18,6 @@ time, mark, audio, video
 	font-size: 100%
 	font: inherit
 	vertical-align: middle
-	list-style: none
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -35,10 +34,11 @@ body
 	&::-webkit-scrollbar-thumb
 		background: #ffc5e7
 		border-radius: 3px
+		
 ol, ul, button
-	// list-style: none
 	margin: 0
 	padding: 0
+	list-style: none
 
 blockquote, q
 	quotes: none
@@ -69,26 +69,3 @@ button, a
 img
 	max-width: 100%
 	height: auto
-
-// bootstrap4 edit
-.tab-content
-	>.tab-pane
-		height: 0
-		display: block
-		opacity: 0
-		pointer-events: none
-	>.active
-		height: auto
-		opacity: 1
-		pointer-events: auto
-
-.nav-tabs, .nav-pills
-	.nav-link, a.nav-link, a.nav-link.active
-		padding: 0
-		background: transparent
-		background-color: none
-
-.tab-pane
-	display: none
-	&.active
-		display: block
