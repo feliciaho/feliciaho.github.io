@@ -5,6 +5,8 @@ body
     font-family: "the-seasons", sans-serif
     font-style: normal
     line-height: 1.4
+    font-weight: 300
+    font-size: 18px
     #tsparticles
         position: fixed
         z-index: 1
@@ -17,43 +19,52 @@ body
         display: flex
         flex-direction: column
         justify-content: center
-        align-items: flex-start
-        padding: 0 0 0 5vw
-        .mainTitle1    
+        .mainTitle
             position: relative
-            margin-bottom: -3rem
-            font-size: 8vw
-            font-style: Light
-            letter-spacing: 1rem
-            display: flex
-            width: 100%
-            +media-pc-2
-                margin-bottom: unset
-            +media-sp
-                padding: uset
-                margin-bottom: unset
-                letter-spacing: .8rem
-        .mainTitle2
-            font-size: 4vw
-            font-style: italic
-            font-weight: 300
+            font-size: clamp(2rem, 3vw, 3rem)
+            margin-left: -25vw
+            +media-narrow
+                margin-left: -35vw
+        .mainTitle1
+            position: relative
             color: #ffc5e7
-            letter-spacing: 1rem
-            +media-sp
-                padding: uset
-                lletter-spacing: .3rem
-                font-size: 5vw
-        .scrollBox
-            font-size: 50px
+            font-size: clamp(4rem, 8vw, 10rem)
+            display: flex
+            justify-content: center
+        .mainTitle2
+            font-size: clamp(2rem, 3vw, 3rem)
+            margin-left: 18vw
+            +media-narrow
+                margin-left: 10vw
+        .scrollDown
             position: absolute
-            bottom: 30px
             left: 50%
+            bottom: 30px
             transform: translateX(-50%)
-            +media-sp
-                font-size: 23px
-            .scroll
-                &:last-child
-                    opacity: 0
-                    top: 0
-                    left: 0
-                    color: #ffc5e7
+            &::after
+                content: ''
+                position: absolute
+                bottom: -10px
+                transform: translateX(-50%)
+                left: 52%
+                width: 11px
+                height: 52px
+                pointer-events: none
+                background: url(../images/scroll.png) no-repeat 0% 0%
+                background-size: contain
+            div
+                height: 25px
+                overflow: hidden
+                p
+                    position: relative
+                    font-size: 1.5rem
+                    background-clip: text
+                    animation: scrollAni 1s ease-out infinite
+                    text-fill-color: transparent
+                    &:nth-child(2)
+                        top: 23px
+    @keyframes scrollAni
+        0%
+            top: -30px
+        100%
+            top: 0px

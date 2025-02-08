@@ -1,12 +1,15 @@
 // media query
-// $media-narrow: 350px
+$media-narrow-2: 350px
 $media-narrow: 480px
 $media-sp: 767px
 $media-tablet: 768px
-$media-pc-2: 1024px
-$media-pc: 1200px
+$media-sptb-2: 800px
+$media-sptb: 900px
 $media-pcWide: 1440px
-$media-pcXXL: 1600px
+
+@mixin media-narrow-2
+	@media only screen and (max-width: $media-narrow-2)
+		@content
 
 @mixin media-narrow
 	@media only screen and (max-width: $media-narrow)
@@ -16,32 +19,24 @@ $media-pcXXL: 1600px
 	@media only screen and (max-width: $media-sp)
 		@content
 
-@mixin media-pc
-	@media only screen and (max-width: $media-pc)
+@mixin media-sptb
+	@media only screen and (max-width: $media-sptb)
 		@content
 
-@mixin media-pc-2
-	@media only screen and (max-width: $media-pc-2)
+@mixin media-sptb-2
+	@media only screen and (max-width: $media-sptb-2)
 		@content
 
 @mixin media-tablet
-	@media only screen and (min-width: $media-tablet) and (max-width: $media-pc)
+	@media only screen and (min-width: $media-tablet) and (max-width: $media-sptb)
 		@content
 
 @mixin media-pcWide
 	@media only screen and (max-width: $media-pcWide)
 		@content
 
-@mixin media-pcXXL
-	@media only screen and (max-width: $media-pcXXL)
-		@content
-
 @mixin media-pctb
 	@media only screen and (max-width: $media-tablet)
-		@content
-
-@mixin media-pc
-	@media only screen and (max-width: $media-pc)
 		@content
 
 @mixin media-ie

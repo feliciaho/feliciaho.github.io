@@ -2,7 +2,7 @@
 const App = {
   data() {
     return {
-      projects: [
+      companyProjects: [
         {
           type: "EOV",
           name: "official website",
@@ -27,7 +27,24 @@ const App = {
           githubUrl: "https://github.com/feliciaho/eov",
           img : "/images/ghostBanner.png",
         },
-
+      ],
+      sideProjects: [
+        {
+          type: "EOV",
+          name: "official website",
+          skills: ["Pug", "SASS", "jQuery"],
+          webUrl: "https://eov.mangot5.com/eov/index",
+          githubUrl: "https://github.com/feliciaho/eov",
+          img : "/images/eovBanner.png",
+        },
+        {
+          type: "Ghost.online",
+          name: "Christmas website",
+          skills: ["HTML", "SCSS", "jQuery" ,"RESTful API"],
+          webUrl: "https://go.digeam.com/event/20231220/",
+          githubUrl: "https://github.com/feliciaho/eov",
+          img : "/images/ghostBanner.png",
+        },
       ],
     };
   },

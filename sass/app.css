@@ -90,6 +90,8 @@ body {
   font-family: "the-seasons", sans-serif;
   font-style: normal;
   line-height: 1.4;
+  font-weight: 300;
+  font-size: 18px;
 }
 body #tsparticles {
   position: fixed;
@@ -104,61 +106,73 @@ body header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding: 0 0 0 5vw;
+}
+body header .mainTitle {
+  position: relative;
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-left: -25vw;
+}
+@media only screen and (max-width: 480px) {
+  body header .mainTitle {
+    margin-left: -35vw;
+  }
 }
 body header .mainTitle1 {
   position: relative;
-  margin-bottom: -3rem;
-  font-size: 8vw;
-  font-style: Light;
-  letter-spacing: 1rem;
+  color: #ffc5e7;
+  font-size: clamp(4rem, 8vw, 10rem);
   display: flex;
-  width: 100%;
-}
-@media only screen and (max-width: 1024px) {
-  body header .mainTitle1 {
-    margin-bottom: unset;
-  }
-}
-@media only screen and (max-width: 767px) {
-  body header .mainTitle1 {
-    padding: uset;
-    margin-bottom: unset;
-    letter-spacing: 0.8rem;
-  }
+  justify-content: center;
 }
 body header .mainTitle2 {
-  font-size: 4vw;
-  font-style: italic;
-  font-weight: 300;
-  color: #ffc5e7;
-  letter-spacing: 1rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-left: 18vw;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
   body header .mainTitle2 {
-    padding: uset;
-    lletter-spacing: 0.3rem;
-    font-size: 5vw;
+    margin-left: 10vw;
   }
 }
-body header .scrollBox {
-  font-size: 50px;
+body header .scrollDown {
   position: absolute;
-  bottom: 30px;
   left: 50%;
+  bottom: 30px;
   transform: translateX(-50%);
 }
-@media only screen and (max-width: 767px) {
-  body header .scrollBox {
-    font-size: 23px;
-  }
+body header .scrollDown::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  transform: translateX(-50%);
+  left: 52%;
+  width: 11px;
+  height: 52px;
+  pointer-events: none;
+  background: url(../images/scroll.png) no-repeat 0% 0%;
+  background-size: contain;
 }
-body header .scrollBox .scroll:last-child {
-  opacity: 0;
-  top: 0;
-  left: 0;
-  color: #ffc5e7;
+body header .scrollDown div {
+  height: 25px;
+  overflow: hidden;
+}
+body header .scrollDown div p {
+  position: relative;
+  font-size: 1.5rem;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: scrollAni 1s ease-out infinite;
+  text-fill-color: transparent;
+}
+body header .scrollDown div p:nth-child(2) {
+  top: 23px;
+}
+@keyframes scrollAni {
+  0% {
+    top: -30px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
 section {
@@ -169,27 +183,55 @@ section {
     margin-top: 10vh;
   }
 }
-section h1 {
-  color: white;
-  font-size: 5vw;
-  font-weight: 700;
+section h1.secTitle {
+  font-size: clamp(2rem, 3vw, 4rem);
+  margin: 3%;
+}
+section h2.projectTitle {
+  font-size: clamp(2rem, 3vw, 3rem);
   color: #ffc5e7;
-  margin: 50px;
+  margin: 8% 0 0 0;
+}
+section span {
+  border: unset;
+  border-left: 1px solid #ffc5e7;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+section p {
+  font-size: clamp(1rem, 2vw, 2rem);
+  margin: 10px 0;
+  text-align: start;
+  color: #ffc5e7;
+}
+section label {
+  text-align: center;
+  color: white;
+  padding: 5px 20px;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 767px) {
-  section h1 {
-    margin: 20px;
-    font-size: 40px;
+  section label {
+    font-size: 12px;
+    width: 80px;
   }
 }
-section.s1 {
+section label.seemore {
+  border: unset;
+  color: #000;
+  background-color: #ffc5e7;
+}
+section.s2, section.s3 {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section.s1 .project {
-  width: 80%;
+section.s2 .project, section.s3 .project {
+  max-width: 80%;
   display: flex;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: #ffc5e7;
@@ -197,43 +239,23 @@ section.s1 .project {
   padding: 15vh 0;
   flex-wrap: wrap;
 }
-section.s1 .project:nth-child(odd) {
+section.s2 .project:nth-child(odd), section.s3 .project:nth-child(odd) {
   flex-direction: row-reverse;
 }
-section.s1 .project:nth-child(odd) .text1 {
+section.s2 .project:nth-child(odd) .secText, section.s3 .project:nth-child(odd) .secText {
   padding-left: 50px;
 }
-@media only screen and (max-width: 1024px) {
-  section.s1 .project:nth-child(odd) .text1 {
+@media only screen and (max-width: 900px) {
+  section.s2 .project:nth-child(odd) .secText, section.s3 .project:nth-child(odd) .secText {
     padding-left: unset;
   }
 }
-@media only screen and (max-width: 1024px) {
-  section.s1 .project {
+@media only screen and (max-width: 900px) {
+  section.s2 .project, section.s3 .project {
     padding: 5vh 0;
   }
 }
-section.s1 .project label {
-  text-align: center;
-  width: 120px;
-  color: white;
-  padding: 5px 0px;
-  font-size: 18px;
-  border: 1px solid white;
-}
-@media only screen and (max-width: 767px) {
-  section.s1 .project label {
-    font-size: 12px;
-    width: 80px;
-  }
-}
-section.s1 .project label.seemore {
-  border: unset;
-  color: #000;
-  background-color: #ffc5e7;
-  font-weight: 700;
-}
-section.s1 .project .text1 {
+section.s2 .project .secText, section.s3 .project .secText {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -241,85 +263,42 @@ section.s1 .project .text1 {
   align-items: flex-start;
   align-content: center;
 }
-@media only screen and (max-width: 1024px) {
-  section.s1 .project .text1 {
+@media only screen and (max-width: 900px) {
+  section.s2 .project .secText, section.s3 .project .secText {
     width: 100%;
     align-content: flex-start;
   }
 }
-section.s1 .project .text1 span {
-  color: #ffc5e7;
-  font-size: 23px;
-  border: unset;
-  border-left: 1px solid #ffc5e7;
-  padding: 0 10px;
-  margin: 0 10px;
+section.s2 .project .secText .skillWrap, section.s3 .project .secText .skillWrap {
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-@media only screen and (max-width: 1024px) {
-  section.s1 .project .text1 span {
-    font-size: 20px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  section.s1 .project .text1 span {
-    font-size: 18px;
-  }
-}
-section.s1 .project .text1 h2 {
-  font-size: 60px;
-  margin: 20px 0;
-}
-@media only screen and (max-width: 1024px) {
-  section.s1 .project .text1 h2 {
-    font-size: 35px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  section.s1 .project .text1 h2 {
-    font-size: 30px;
-  }
-}
-section.s1 .project .text1 p {
-  text-align: center;
-  font-size: 30px;
-  margin: 10px 0;
-  text-align: start;
-  color: #ffc5e7;
-}
-@media only screen and (max-width: 1024px) {
-  section.s1 .project .text1 p {
-    font-size: 25px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  section.s1 .project .text1 p {
-    font-size: 20px;
-  }
-}
-section.s1 .project .imgBox {
+section.s2 .project .banner, section.s3 .project .banner {
   position: relative;
   overflow: hidden;
-  max-width: 60%;
+  max-width: 55%;
   border-radius: 20px;
   z-index: 2;
 }
-@media only screen and (max-width: 1024px) {
-  section.s1 .project .imgBox {
+@media only screen and (max-width: 900px) {
+  section.s2 .project .banner, section.s3 .project .banner {
     max-width: unset;
     margin: 5vh 0;
   }
 }
-section.s1 .project .imgBox a {
+section.s2 .project .banner a, section.s3 .project .banner a {
   z-index: 3;
   cursor: pointer;
 }
-section.s1 .project .imgBox a img {
+section.s2 .project .banner a img, section.s3 .project .banner a img {
   transition: 0.2s linear;
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
 }
-section.s1 .project .imgBox .mask {
+section.s2 .project .banner .mask, section.s3 .project .banner .mask {
   position: absolute;
   top: 0;
   left: 0;
@@ -335,35 +314,11 @@ section.s1 .project .imgBox .mask {
   font-size: 24px;
   pointer-events: none;
 }
-section.s1 .project .imgBox:hover .mask {
+section.s2 .project .banner:hover .mask, section.s3 .project .banner:hover .mask {
   opacity: 1;
 }
-section.s1 .project .imgBox:hover img {
+section.s2 .project .banner:hover img, section.s3 .project .banner:hover img {
   transform: scale(1.1);
-}
-section.s3 {
-  margin-top: unset;
-}
-section.s3 .title3 {
-  position: relative;
-  margin: 2vh auto;
-  width: 50vw;
-  color: white;
-  font-size: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 30px;
-  cursor: pointer;
-  transition: 0.2s linear;
-}
-section.s3 .title3:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-@media only screen and (max-width: 767px) {
-  section.s3 .title3 {
-    font-size: 20px;
-    margin: 0 auto;
-    width: 80vw;
-  }
 }
 
 .svgImg {
@@ -371,8 +326,64 @@ section.s3 .title3:hover {
   height: 1.5rem;
   fill: #fff;
 }
-.svgImg_web {
-  fill: none;
+.navbar {
+  background: linear-gradient(0deg, rgba(36, 36, 36, 0) 15.05%, rgba(77, 77, 77, 0.6862745098) 85.34%) !important;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 767px) {
+  .navbar {
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.8823529412) 15.05%, rgba(77, 77, 77, 0.6862745098) 85.34%) !important;
+  }
+}
+.navbar .logo {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .navbar .logo {
+    position: unset;
+  }
+}
+.navbar .logo a {
+  transition: 0.2s all;
+}
+.navbar .logo a:hover {
+  filter: brightness(1.5);
+}
+.navbar .navbar-collapse {
+  justify-content: center;
+  gap: 30px;
+}
+.navbar .navbar-collapse .navbar-nav {
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar-collapse .navbar-nav li {
+  position: relative;
+  padding: 25px 0px;
+}
+.navbar .navbar-collapse .navbar-nav li:last-child .nav-link {
+  border: 0px;
+}
+.navbar .navbar-collapse .navbar-nav li .nav-link {
+  border-right: 1px solid #ffc5e7;
+  padding: 0 40px;
+  color: white;
+}
+.navbar .navbar-collapse .navbar-nav li .nav-link:hover {
+  color: white;
+  position: relative;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+@media only screen and (max-width: 900px) {
+  .navbar .navbar-collapse .navbar-nav li .nav-link {
+    border: 0px;
+  }
 }
 
 .mainTitle1 b {
