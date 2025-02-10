@@ -176,7 +176,7 @@ body header .scrollDown div p:nth-child(2) {
 }
 
 section {
-  margin-top: 30vh;
+  margin-top: 10vh;
 }
 @media only screen and (max-width: 767px) {
   section {
@@ -197,11 +197,10 @@ section span {
   border-left: 1px solid #ffc5e7;
   padding: 0 10px;
   margin: 0 10px;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1.1rem, 1.5vw, 2rem);
 }
 section p {
-  font-size: clamp(1rem, 2vw, 2rem);
-  margin: 10px 0;
+  font-size: clamp(1.3rem, 2vw, 2rem);
   text-align: start;
   color: #ffc5e7;
 }
@@ -209,19 +208,13 @@ section label {
   text-align: center;
   color: white;
   padding: 5px 20px;
-  font-size: 18px;
+  font-size: 1rem;
   border: 1px solid white;
   border-radius: 5px;
 }
-@media only screen and (max-width: 767px) {
-  section label {
-    font-size: 12px;
-    width: 80px;
-  }
-}
 section label.seemore {
   border: unset;
-  color: #000;
+  color: #000000;
   background-color: #ffc5e7;
 }
 section.s2, section.s3 {
@@ -231,7 +224,7 @@ section.s2, section.s3 {
   align-items: center;
 }
 section.s2 .project, section.s3 .project {
-  max-width: 80%;
+  width: 85%;
   display: flex;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: #ffc5e7;
@@ -241,14 +234,6 @@ section.s2 .project, section.s3 .project {
 }
 section.s2 .project:nth-child(odd), section.s3 .project:nth-child(odd) {
   flex-direction: row-reverse;
-}
-section.s2 .project:nth-child(odd) .secText, section.s3 .project:nth-child(odd) .secText {
-  padding-left: 50px;
-}
-@media only screen and (max-width: 900px) {
-  section.s2 .project:nth-child(odd) .secText, section.s3 .project:nth-child(odd) .secText {
-    padding-left: unset;
-  }
 }
 @media only screen and (max-width: 900px) {
   section.s2 .project, section.s3 .project {
@@ -262,23 +247,38 @@ section.s2 .project .secText, section.s3 .project .secText {
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: center;
+  padding: 0 50px;
 }
 @media only screen and (max-width: 900px) {
   section.s2 .project .secText, section.s3 .project .secText {
     width: 100%;
     align-content: flex-start;
+    padding: unset;
   }
 }
 section.s2 .project .secText .skillWrap, section.s3 .project .secText .skillWrap {
-  width: 80%;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
+section.s2 .project .secText .githubIcon, section.s3 .project .secText .githubIcon {
+  margin: 10px 0;
+  text-align: center;
+  color: #000000;
+  background-color: #fff;
+  padding: 5px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: 0.3s all;
+  font-size: 1rem;
+}
+section.s2 .project .secText .githubIcon:hover, section.s3 .project .secText .githubIcon:hover {
+  transform: scale(1.1);
+}
 section.s2 .project .banner, section.s3 .project .banner {
   position: relative;
   overflow: hidden;
-  max-width: 55%;
+  max-width: 45%;
   border-radius: 20px;
   z-index: 2;
 }
@@ -321,11 +321,37 @@ section.s2 .project .banner:hover img, section.s3 .project .banner:hover img {
   transform: scale(1.1);
 }
 
+footer {
+  margin: 10px;
+}
+footer .footerImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+
 .svgImg {
   width: 1.5rem;
   height: 1.5rem;
   fill: #fff;
 }
+.svgImg_nav {
+  width: 2rem;
+  fill: #fff;
+  height: 2rem;
+  transition: 0.3s all;
+}
+.svgImg_nav:hover {
+  transform: scale(1.2);
+}
+.svgImg_sec {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #000000;
+}
+
 .navbar {
   background: linear-gradient(0deg, rgba(36, 36, 36, 0) 15.05%, rgba(77, 77, 77, 0.6862745098) 85.34%) !important;
   color: #fff;

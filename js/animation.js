@@ -1,67 +1,55 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.set(".title1", { scale: 0.5 });
+gsap.set(".secTitle", { scale: 0.5 });
 gsap.set(".title2", { scale: 0.5 });
-gsap.set(".text1", { yPercent: -10, scale: 1 });
-gsap.set(".imgBox", { yPercent: 10 });
+gsap.set(".secText", { yPercent: -10});
+gsap.set(".banner", { yPercent: 10 });
 
-gsap.to(".mainTitle", {
-xPercent: -100,
-scale: 2,
-opacity: 0,
-ease: "none",
-start: "top center",
-end: "bottom center",
-scrollTrigger: {
+gsap.to(".mainTitle1", {
+  xPercent: 200,
+  scale: 5,
+  opacity: 0,
+  ease: "none",
+  start: "top center",
+  end: "bottom center",
+  scrollTrigger: {
     scrub: 1,
-},
+  },
 });
 
-gsap.to(".textTransform", {
-xPercent: 200,
-scale: 5,
-opacity: 0,
-ease: "none",
-start: "top center",
-end: "bottom center",
-scrollTrigger: {
-    scrub: 1,
-},
-});
-
-gsap.to(".title1", {
-yPercent: 5,
-scale: 1,
-ease: "none",
-start: "top center",
-end: "bottom center",
-scrollTrigger: {
-    trigger: ".title1",
-    scrub: 1,
-},
-});
-
-document.querySelectorAll(".text1").forEach((text1) => {
-gsap.to(text1, {
-    yPercent: 10,
+document.querySelectorAll(".secTitle").forEach((secTitle) => {
+  gsap.to(secTitle, {
+    yPercent: 5,
+    scale: 1.2,
     ease: "none",
-    scale: 0.9,
-    opacity: 0.9,
+    start: "top center",
+    end: "bottom center",
     scrollTrigger: {
-    trigger: text1,
-    scrub: 1,
+      trigger: secTitle,
+      scrub: 1,
     },
-});
+  });
 });
 
-document.querySelectorAll(".imgBox").forEach((imgBox) => {
-gsap.to(imgBox, {
+document.querySelectorAll(".secText").forEach((secText) => {
+  gsap.to(secText, {
+    yPercent: 5,
+    ease: "none",
+    scrollTrigger: {
+      trigger: secText,
+      scrub: 1,
+    },
+  });
+});
+
+document.querySelectorAll(".banner").forEach((banner) => {
+  gsap.to(banner, {
     yPercent: -10,
     ease: "none",
     scale: 1,
     scrollTrigger: {
-    trigger: imgBox,
-    scrub: 1,
+      trigger: banner,
+      scrub: 1,
     },
-});
+  });
 });
