@@ -62,8 +62,8 @@
             <div class="skillWrap">
               <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
             </div>
-            <ul class="list" v-for="(i,key) in i.list" :key="i + 'list'">
-              <li>{{ i }}</li>
+            <ul class="list">
+              <li v-for="(i,key) in i.list" :key="i + 'list'">{{ i }}</li>
             </ul>
           </div>
       </section>

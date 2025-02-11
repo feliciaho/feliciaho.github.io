@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.set(".secTitle", { scale: 0.5 });
 gsap.set(".title2", { scale: 0.5 });
-gsap.set(".secText", { yPercent: -10});
+// gsap.set(".secText", { yPercent: -10});
 gsap.set(".banner", { yPercent: 10 });
 
 gsap.to(".mainTitle1", {
@@ -26,17 +26,6 @@ document.querySelectorAll(".secTitle").forEach((secTitle) => {
     end: "bottom center",
     scrollTrigger: {
       trigger: secTitle,
-      scrub: 1,
-    },
-  });
-});
-
-document.querySelectorAll(".secText").forEach((secText) => {
-  gsap.to(secText, {
-    yPercent: 5,
-    ease: "none",
-    scrollTrigger: {
-      trigger: secText,
       scrub: 1,
     },
   });

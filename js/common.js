@@ -6,7 +6,7 @@ const App = {
         {
           type: "Frontend designer",
           name: "Happytuk",
-          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD", "Vue"],
+          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD", "Vue", "Git"],
           list:[
             "負責開發並維護官網及活動頁，使用 Pug、CSS 和 JavaScript，jQuery 實現響應式設計和互動功能。",
             "引入並整合 Vue 框架，協助公司從 JavaScript、jQuery 過渡到 Vue 開發模式。",
