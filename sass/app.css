@@ -217,13 +217,13 @@ section label.seemore {
   color: #000000;
   background-color: #ffc5e7;
 }
-section.s2, section.s3 {
+section.s1, section.s2, section.s3 {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-section.s2 .project, section.s3 .project {
+section.s1 .project, section.s2 .project, section.s3 .project {
   width: 85%;
   display: flex;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -232,15 +232,18 @@ section.s2 .project, section.s3 .project {
   padding: 15vh 0;
   flex-wrap: wrap;
 }
-section.s2 .project:nth-child(odd), section.s3 .project:nth-child(odd) {
+section.s1 .project:nth-child(odd), section.s2 .project:nth-child(odd), section.s3 .project:nth-child(odd) {
   flex-direction: row-reverse;
 }
 @media only screen and (max-width: 900px) {
-  section.s2 .project, section.s3 .project {
+  section.s1 .project, section.s2 .project, section.s3 .project {
     padding: 5vh 0;
   }
 }
-section.s2 .project .secText, section.s3 .project .secText {
+section.s1 .project_s1, section.s2 .project_s1, section.s3 .project_s1 {
+  border: none;
+}
+section.s1 .project .secText, section.s2 .project .secText, section.s3 .project .secText {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -250,18 +253,18 @@ section.s2 .project .secText, section.s3 .project .secText {
   padding: 0 50px;
 }
 @media only screen and (max-width: 900px) {
-  section.s2 .project .secText, section.s3 .project .secText {
+  section.s1 .project .secText, section.s2 .project .secText, section.s3 .project .secText {
     width: 100%;
     align-content: flex-start;
     padding: unset;
   }
 }
-section.s2 .project .secText .skillWrap, section.s3 .project .secText .skillWrap {
+section.s1 .project .secText .skillWrap, section.s2 .project .secText .skillWrap, section.s3 .project .secText .skillWrap {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
-section.s2 .project .secText .githubIcon, section.s3 .project .secText .githubIcon {
+section.s1 .project .secText .githubIcon, section.s2 .project .secText .githubIcon, section.s3 .project .secText .githubIcon {
   margin: 10px 0;
   text-align: center;
   color: #000000;
@@ -272,10 +275,19 @@ section.s2 .project .secText .githubIcon, section.s3 .project .secText .githubIc
   transition: 0.3s all;
   font-size: 1rem;
 }
-section.s2 .project .secText .githubIcon:hover, section.s3 .project .secText .githubIcon:hover {
+section.s1 .project .secText .githubIcon:hover, section.s2 .project .secText .githubIcon:hover, section.s3 .project .secText .githubIcon:hover {
   transform: scale(1.1);
 }
-section.s2 .project .banner, section.s3 .project .banner {
+section.s1 .project .secText_s1, section.s2 .project .secText_s1, section.s3 .project .secText_s1 {
+  width: 80%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+}
+section.s1 .project .banner, section.s2 .project .banner, section.s3 .project .banner {
   position: relative;
   overflow: hidden;
   max-width: 45%;
@@ -283,22 +295,22 @@ section.s2 .project .banner, section.s3 .project .banner {
   z-index: 2;
 }
 @media only screen and (max-width: 900px) {
-  section.s2 .project .banner, section.s3 .project .banner {
+  section.s1 .project .banner, section.s2 .project .banner, section.s3 .project .banner {
     max-width: unset;
     margin: 5vh 0;
   }
 }
-section.s2 .project .banner a, section.s3 .project .banner a {
+section.s1 .project .banner a, section.s2 .project .banner a, section.s3 .project .banner a {
   z-index: 3;
   cursor: pointer;
 }
-section.s2 .project .banner a img, section.s3 .project .banner a img {
+section.s1 .project .banner a img, section.s2 .project .banner a img, section.s3 .project .banner a img {
   transition: 0.2s linear;
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
 }
-section.s2 .project .banner .mask, section.s3 .project .banner .mask {
+section.s1 .project .banner .mask, section.s2 .project .banner .mask, section.s3 .project .banner .mask {
   position: absolute;
   top: 0;
   left: 0;
@@ -314,10 +326,10 @@ section.s2 .project .banner .mask, section.s3 .project .banner .mask {
   font-size: 24px;
   pointer-events: none;
 }
-section.s2 .project .banner:hover .mask, section.s3 .project .banner:hover .mask {
+section.s1 .project .banner:hover .mask, section.s2 .project .banner:hover .mask, section.s3 .project .banner:hover .mask {
   opacity: 1;
 }
-section.s2 .project .banner:hover img, section.s3 .project .banner:hover img {
+section.s1 .project .banner:hover img, section.s2 .project .banner:hover img, section.s3 .project .banner:hover img {
   transform: scale(1.1);
 }
 

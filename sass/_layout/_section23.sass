@@ -32,7 +32,7 @@ section
             border: unset
             color: #000000
             background-color: #ffc5e7
-    &.s2, &.s3
+    &.s1, &.s2, &.s3
         position: relative
         display: flex
         flex-direction: column
@@ -49,6 +49,8 @@ section
                 flex-direction: row-reverse
             +media-sptb
                 padding: 5vh 0
+            &_s1
+                border: none
             // text
             .secText
                 width: 40%
@@ -78,6 +80,14 @@ section
                     font-size: 1rem
                     &:hover
                         transform: scale(1.1)
+                &_s1
+                    width: 80%
+                    text-align: start
+                    display: flex
+                    flex-direction: column
+                    flex-wrap: wrap
+                    align-items: flex-start
+                    align-content: center
             // banner
             .banner
                 position: relative
