@@ -181,6 +181,7 @@ body header .scrollDown div p:nth-child(2) {
 }
 
 section {
+  overflow-x: hidden;
   margin-top: 15vh;
   position: relative;
   display: flex;
