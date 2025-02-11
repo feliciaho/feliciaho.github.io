@@ -24,6 +24,10 @@ section
         font-size: clamp(1.3rem, 2vw, 2rem)
         text-align: start
         color: #ffc5e7
+        &.time
+            border: unset
+            color: #ffff
+            font-size: clamp(1.1rem, 1.2vw, 2rem)
     label
         text-align: center
         color: #ffff
@@ -71,16 +75,22 @@ section
             width: 100%
             text-align: start
             .list
-                margin-top: 10px
                 li
                     list-style-type: disc
                     margin-left: 15px
+            .secTitleWrap
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                +media-sptb
+                    flex-direction: column
+
     .skillWrap
+        margin: 10px 0
         display: flex
         gap: 10px
         flex-wrap: wrap
     .githubIcon
-        margin: 10px 0
         text-align: center
         color: #000000
         background-color: #fff

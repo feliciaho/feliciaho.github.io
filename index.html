@@ -58,7 +58,10 @@
         <div class="project_s1" v-for="(i,key) in expriences" :key="i">
           <!-- text -->
           <div class="secText_s1">
-            <p>{{i.type}}<span>{{i.name}}</span></p>
+            <div class="secTitleWrap">
+              <p>{{i.type}}<span>{{i.name}}</span></p>
+              <p class="time">{{ i.time }}</p>
+            </div>
             <div class="skillWrap">
               <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
             </div>

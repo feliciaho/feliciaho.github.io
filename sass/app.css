@@ -95,7 +95,7 @@ body {
 }
 @media only screen and (max-width: 900px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 body #tsparticles {
@@ -213,6 +213,11 @@ section p {
   text-align: start;
   color: #ffc5e7;
 }
+section p.time {
+  border: unset;
+  color: white;
+  font-size: clamp(1.1rem, 1.2vw, 2rem);
+}
 section label {
   text-align: center;
   color: white;
@@ -273,20 +278,27 @@ section .secText_s1 {
   width: 100%;
   text-align: start;
 }
-section .secText_s1 .list {
-  margin-top: 10px;
-}
 section .secText_s1 .list li {
   list-style-type: disc;
   margin-left: 15px;
 }
+section .secText_s1 .secTitleWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 900px) {
+  section .secText_s1 .secTitleWrap {
+    flex-direction: column;
+  }
+}
 section .skillWrap {
+  margin: 10px 0;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 section .githubIcon {
-  margin: 10px 0;
   text-align: center;
   color: #000000;
   background-color: #fff;

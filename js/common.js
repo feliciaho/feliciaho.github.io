@@ -6,6 +6,7 @@ const App = {
         {
           type: "Frontend designer",
           name: "Happytuk",
+          time: "April 30, 2024~present",
           skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD", "Vue", "Git"],
           list:[
             "負責開發並維護官網及活動頁，使用 Pug、SASS 和 JavaScript，jQuery 實現響應式設計和互動功能。",
@@ -17,6 +18,7 @@ const App = {
         {
           type: "Website Designer",
           name: "Digeam",
+          time: "April 11, 2023~April 29, 2024",
           skills: ["HTML", "SCSS", "jQuery", "javascript", "RESTful API", "Vue", "Git"],
           list:[
             "負責開發並維護官網及活動頁，使用 HTML、SCSS 和 JavaScript，jQuery 實現響應式設計和互動功能。",
