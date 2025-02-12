@@ -186,6 +186,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 767px) {
   section {
