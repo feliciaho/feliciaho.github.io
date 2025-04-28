@@ -71,7 +71,7 @@ const App = {
           skills: ["HTML", "SASS", "javascript" ,"RESTful API", "Vue", "Vite"],
           webUrl: "https://feliciaho.github.io/recipeWeb_new/#/homeView",
           githubUrl: "https://github.com/feliciaho/recipeWeb_new",
-          img : "images/recipeBanner.png",
+          img : "images/recipeBanner.jpg",
         },
       ],
       uiux: [

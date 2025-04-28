@@ -270,7 +270,7 @@ section .project a {
 section .project_s1 {
   width: 65%;
   border: none;
-  padding: 5vh 0;
+  padding: 10vh 0;
 }
 @media only screen and (max-width: 991px) {
   section .project_s1 {
