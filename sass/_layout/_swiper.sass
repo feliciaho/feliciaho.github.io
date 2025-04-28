@@ -1,0 +1,62 @@
+.s4
+    .swiper
+        width: 100%
+        padding-bottom: 50px
+        +media-sptb
+            padding-top: 0
+        &-slide
+            background-position: center
+            background-size: cover
+            width: 600px
+            height: auto
+            text-align: center
+        &-slide img
+            display: inline-block
+            width: 100%
+            border-radius: 20px
+            +media-sptb
+                border-radius: 10px
+        .swiper-button-prev, .swiper-button-next
+            top: 50%
+            width: 55px
+            height: 55px
+            z-index: 9
+            transition: 0.3s all
+            color: #ffc5e7
+            background: #000000c0
+            border-radius: 20px
+            opacity: 0.5
+            border: 2px solid #ffffff
+            &:after
+                font-size: 25px
+            &:hover, &:focus, &.active
+                opacity: 1
+            +media-sptb
+                display: none
+.s5
+    .swiper
+        width: 100%
+        padding-top: 50px
+        padding-bottom: 50px
+        &-slide
+            background-position: center
+            background-size: cover
+            width: 600px
+            height: auto
+            text-align: center
+            margin: auto -20px
+            +media-sp
+                width: 500px
+            +media-narrow
+                width: 280px
+        &-slide img
+            display: inline-block
+            width: 100%
+// pagination
+.swiper-pagination
+    .swiper-pagination-bullet
+        background-color: #ffffff
+        height: 5px
+        border-radius: 20%
+        &.swiper-pagination-bullet-active
+            background-color: #ffc5e7

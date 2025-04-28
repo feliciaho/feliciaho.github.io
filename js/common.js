@@ -67,19 +67,57 @@ const App = {
       sideProjects: [
         {
           type: "sideProjects",
-          name: "Traveling website",
-          skills: ["Pug", "SASS", "jQuery"],
-          webUrl: "https://eov.mangot5.com/eov/index",
-          githubUrl: "https://github.com/feliciaho/eov",
-          img : "images/eovBanner.png",
+          name: "Recipe website",
+          skills: ["HTML", "SASS", "javascript" ,"RESTful API", "Vue", "Vite"],
+          webUrl: "https://feliciaho.github.io/recipeWeb_new/#/homeView",
+          githubUrl: "https://github.com/feliciaho/recipeWeb_new",
+          img : "images/recipeBanner.png",
+        },
+      ],
+      uiux: [
+        {
+          type: "Cabel",
+          name: "Official website",
+          webUrl: "https://cbo.digeam.com/index",
+          img : [
+            "images/cabelOfficial/1.jpg",
+            "images/cabelOfficial/2.jpg",
+            "images/cabelOfficial/3.jpg",
+          ],
         },
         {
-          type: "sideProjects",
-          name: "Shopping website",
-          skills: ["HTML", "SCSS", "jQuery" ,"RESTful API"],
-          webUrl: "https://go.digeam.com/event/20231220/",
-          githubUrl: "https://github.com/feliciaho/eov",
-          img : "images/ghostBanner.png",
+          type: "Cabel",
+          name: "Activity website",
+          webUrl: "https://cbo.digeam.com/OBT",
+          img : [
+            "images/cabelActivity/1.jpg",
+          ],
+        },
+        {
+          type: "Ghost",
+          name: "Christmas website",
+          webUrl: "https://feliciaho.github.io/ghost_20231220",
+          img : [
+            "images/ghost/1.jpg",
+            "images/ghost/2.jpg",
+          ],
+        },
+        {
+          type: "XX2",
+          name: "Activity website",
+          img : [
+            "images/xx2/1.jpg",
+            "images/xx2/2.jpg",
+          ],
+        },
+        {
+          type: "flyff",
+          name: "2nd Anniversary website",
+          img : [
+            "images/flyff/1.jpg",
+            "images/flyff/2.jpg",
+            "images/flyff/3.jpg",
+          ],
         },
       ],
     };
@@ -93,5 +131,44 @@ const App = {
       }
     }
   },
+  mounted(){
+    const swiper1 = new Swiper(".mySwiper1", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    const swiper2 = new Swiper(".mySwiper2", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+      rotate: 30,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+      scale: 0.7,
+      },
+      pagination: {
+      el: ".swiper-pagination",
+      clickable: true, // Corrected from "click" to "clickable"
+      },
+      autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+      },
+      loop: true,
+    });
+  },
+  
 };
 Vue.createApp(App).mount("#app");

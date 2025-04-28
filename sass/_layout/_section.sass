@@ -30,6 +30,7 @@ section
             border: unset
             color: #ffff
             font-size: clamp(1.1rem, 1.2vw, 2rem)
+
     label
         text-align: center
         color: #ffff
@@ -41,6 +42,18 @@ section
             border: unset
             color: #000000
             background-color: #ffc5e7
+        &.uiuxBut
+            margin: 10px 0
+            border: unset
+            color: #000000
+            background-color: #ffffff
+            transition: .3s all
+            &:hover
+                transform: scale(1.1)
+                cursor: pointer
+            &.uiuxBut4, &.uiuxBut5
+                display: none
+
     // project
     .project
         width: 85%
@@ -82,13 +95,25 @@ section
                 li
                     list-style-type: disc
                     margin-left: 15px
+                    line-height: 2rem
             .secTitleWrap
                 display: flex
                 flex-direction: row
                 justify-content: space-between
                 +media-sptb
                     flex-direction: column
-
+    .secTextUiux
+        width: 30%
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        align-items: flex-start
+        align-content: center
+        padding: 2vh 20px
+        +media-sptb
+            width: 100%
+            align-content: flex-start
+            padding: unset
     .skillWrap
         margin: 10px 0
         display: flex
@@ -116,6 +141,7 @@ section
         +media-sptb
             width: unset
             margin: 5vh 0
+            border-radius: 10px
         a
             z-index: 3
             cursor: pointer
@@ -143,3 +169,15 @@ section
                 opacity: 1
             img
                 transform: scale(1.1)
+    .bannerUiux
+        width: 65%
+        position: relative
+        overflow: hidden
+        z-index: 2
+        height: fit-content
+        +media-sptb
+            width: unset
+            margin: 5vh 0
+        &:hover
+            img
+                transform: unset

@@ -3,6 +3,8 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.set(".secTitle", { scale: 0.5 });
 gsap.set(".project_s1", { yPercent: -10});
 gsap.set(".banner", { yPercent: 10 });
+gsap.set(".secTextUiux", { yPercent: -5 });
+
 
 // 一開始就動
 gsap.to(".mainTitle1", {
@@ -48,6 +50,19 @@ document.querySelectorAll(".banner").forEach((banner) => {
     scale: 1,
     scrollTrigger: {
       trigger: banner,
+      scrub: 1,
+    },
+  });
+});
+
+
+document.querySelectorAll(".secTextUiux").forEach((secTextUiux) => {
+  gsap.to(secTextUiux, {
+    yPercent: 30,
+    ease: "none",
+    scale: 1,
+    scrollTrigger: {
+      trigger: secTextUiux,
       scrub: 1,
     },
   });
