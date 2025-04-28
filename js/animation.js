@@ -58,7 +58,7 @@ document.querySelectorAll(".banner").forEach((banner) => {
 
 document.querySelectorAll(".secTextUiux").forEach((secTextUiux) => {
   gsap.to(secTextUiux, {
-    yPercent: 30,
+    yPercent: 25,
     ease: "none",
     scale: 1,
     scrollTrigger: {
