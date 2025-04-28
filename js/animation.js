@@ -42,7 +42,6 @@ document.querySelectorAll(".project_s1").forEach((project_s1) => {
   });
 });
 
-
 document.querySelectorAll(".banner").forEach((banner) => {
   gsap.to(banner, {
     yPercent: -10,
@@ -54,7 +53,6 @@ document.querySelectorAll(".banner").forEach((banner) => {
     },
   });
 });
-
 
 document.querySelectorAll(".secTextUiux").forEach((secTextUiux) => {
   gsap.to(secTextUiux, {
