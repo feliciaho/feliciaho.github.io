@@ -130,8 +130,8 @@ body header .mainTitle1 {
   justify-content: center;
 }
 body header .mainTitle2 {
-  font-size: clamp(2rem, 3vw, 3rem);
-  margin-left: 18vw;
+  font-size: clamp(2rem, 3.5vw, 4rem);
+  margin-left: 25vw;
 }
 @media only screen and (max-width: 480px) {
   body header .mainTitle2 {
@@ -181,7 +181,6 @@ body header .scrollDown div p:nth-child(2) {
 }
 
 section {
-  overflow-x: hidden;
   margin-top: 15vh;
   position: relative;
   display: flex;
@@ -253,7 +252,7 @@ section .project {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: #ffc5e7;
   justify-content: center;
-  padding: 15vh 0;
+  padding: 10vh 0;
   flex-wrap: wrap;
 }
 section .project:nth-child(odd) {
@@ -270,7 +269,7 @@ section .project a {
 section .project_s1 {
   width: 65%;
   border: none;
-  padding: 10vh 0;
+  padding: 5vh 0;
 }
 @media only screen and (max-width: 991px) {
   section .project_s1 {
@@ -284,7 +283,7 @@ section .secText {
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: center;
-  padding: 0 20px;
+  padding: 5vh 20px;
 }
 @media only screen and (max-width: 991px) {
   section .secText {
@@ -509,6 +508,7 @@ footer .footerImg {
 }
 
 .s4 .swiper {
+  overflow-x: hidden;
   width: 100%;
   padding-bottom: 50px;
 }
@@ -559,6 +559,7 @@ footer .footerImg {
 }
 
 .s5 .swiper {
+  overflow-x: hidden;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
