@@ -4,7 +4,7 @@ const App = {
     return {
       expriences:[
         {
-          type: "Frontend designer",
+          type: "Frontend Designer",
           name: "Happytuk",
           time: "April, 2024~April, 2025",
           skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD", "Vue", "Git"],
