@@ -110,6 +110,7 @@ body header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 body header .mainTitle {
   position: relative;
@@ -127,6 +128,7 @@ body header .mainTitle1 {
   font-size: clamp(3.3rem, 8vw, 10rem);
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 body header .mainTitle2 {
   font-size: clamp(2rem, 3.5vw, 4rem);
