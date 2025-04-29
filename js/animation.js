@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.set(".secTitle", { scale: 0.5 });
-gsap.set(".project_s1", { yPercent: -10});
+gsap.set(".project_s1", { yPercent: 0});
 gsap.set(".banner", { yPercent: 10 });
 gsap.set(".secTextUiux", { yPercent: -5 });
 
@@ -32,7 +32,7 @@ document.querySelectorAll(".secTitle").forEach((secTitle) => {
 
 document.querySelectorAll(".project_s1").forEach((project_s1) => {
   gsap.to(project_s1, {
-    yPercent: 0,
+    yPercent: 10,
     ease: "none",
     scale: 1,
     scrollTrigger: {
