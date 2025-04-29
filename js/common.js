@@ -104,7 +104,7 @@ const App = {
         },
         {
           type: "XX2",
-          name: "Activity website",
+          name: "New Character website",
           img : [
             "images/xx2/1.jpg",
             "images/xx2/2.jpg",

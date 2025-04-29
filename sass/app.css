@@ -27,7 +27,6 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  position: relative;
   overflow-x: hidden;
 }
 body::-webkit-scrollbar {
