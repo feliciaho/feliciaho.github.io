@@ -334,7 +334,12 @@ section .skillWrap {
   gap: 10px;
   flex-wrap: wrap;
 }
-section .githubIcon {
+section .linkWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+section .githubIcon, section .figmaIcon {
   text-align: center;
   color: #000000;
   background-color: #fff;
@@ -344,8 +349,12 @@ section .githubIcon {
   transition: 0.3s all;
   font-size: 1rem;
 }
-section .githubIcon:hover {
+section .githubIcon:hover, section .figmaIcon:hover {
   transform: scale(1.1);
+}
+section .githubIcon img, section .figmaIcon img {
+  width: 24px;
+  height: 24px;
 }
 section .banner {
   position: relative;

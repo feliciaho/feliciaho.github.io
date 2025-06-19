@@ -117,7 +117,11 @@ section
         display: flex
         gap: 10px
         flex-wrap: wrap
-    .githubIcon
+    .linkWrap
+        display: flex
+        flex-wrap: wrap
+        gap: 10px
+    .githubIcon, .figmaIcon
         text-align: center
         color: #000000
         background-color: #fff
@@ -128,6 +132,13 @@ section
         font-size: 1rem
         &:hover
             transform: scale(1.1)
+        img
+            width: 24px
+            height: 24px
+    // .figmaIcon
+    //     &:nth-of-type(1)
+    //         display: none
+            
     // banner
     .banner
         position: relative
