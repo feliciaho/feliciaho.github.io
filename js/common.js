@@ -2,7 +2,7 @@
 const App = {
   data() {
     return {
-      expriences: [
+      services: [
         {
           type: "網頁開發",
           name: "Website development",
