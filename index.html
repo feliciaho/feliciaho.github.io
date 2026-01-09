@@ -61,7 +61,7 @@
       <header id="header">
         <p class="mainTitle">Hello, It's me</p>
         <p class="mainTitle1"><b>F</b><b>e</b><b>l</b><b>i</b><b>c</b><b>i</b><b>a</b><b>&nbspH</b><b>o</b><b>'s</b></h1>
-        <p class="mainTitle2">Portfolio</p>
+        <p class="mainTitle2">Design Studio</p>
         <div class="scrollDown">
           <div>
             <p>&nbsp;&nbsp;Scroll&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down</p>
@@ -71,13 +71,12 @@
       </header>
       <!-- section1 -->
       <section class="s1" id="s1">
-        <h1 class="secTitle">Experiences</h1>
+        <h1 class="secTitle">Service</h1>
         <div class="project_s1" v-for="(i,key) in expriences" :key="i">
-          <!-- text -->
           <div class="secText_s1">
             <div class="secTitleWrap">
               <p>{{i.type}}<span>{{i.name}}</span></p>
-              <p class="time">{{ i.time }}</p>
+              <p class="time">{{ i.price }}</p>
             </div>
             <div class="skillWrap">
               <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
@@ -93,7 +92,7 @@
           <!-- text -->
           <div class="secText">
             <h2 class="projectTitle">Project {{key+1}}</h2>
-            <p>{{i.type}}<span>{{i.name}}</span></p>
+            <p>{{i.chName}}<span>{{i.name}}</span></p>
             <div class="skillWrap">
               <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
             </div>
@@ -128,7 +127,7 @@
           <!-- text -->
           <div class="secText">
             <h2 class="projectTitle">Project {{key+1}}</h2>
-            <p>{{i.type}}<span>{{i.name}}</span></p>
+            <p>{{i.chName}}<span>{{i.name}}</span></p>
             <div class="skillWrap">
               <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
             </div>
@@ -150,14 +149,13 @@
           </div>
         </div>
       </section>
-
       <section class="s4" id="s4">
         <h1 class="secTitle">UIUX</h1>
         <div class="project" v-for="(i,key) in uiux" :key="i">
           <!-- text -->
           <div class="secTextUiux">
             <h2 class="projectTitle">Project {{key+1}}</h2>
-            <p>{{i.type}}<span>{{i.name}}</span></p>
+            <p>{{i.chName}}<span>{{i.name}}</span></p>
             <!-- icon -->
             <a target="_blank" :href=i.webUrl>
               <label :class="`uiuxBut uiuxBut${key+1}`">see more</label>
@@ -184,7 +182,7 @@
           <!-- Swiper -->
           <div class="swiper mySwiper2">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" v-for="(i,key) in 17" :key="i">
+              <div class="swiper-slide" v-for="(i,key) in 25" :key="i">
                 <img :src="`images/banner/${i}.jpg`"/>
               </div>
             </div>
