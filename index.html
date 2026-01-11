@@ -4,19 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Felicia Ho's Design Studio">
+  <meta name="description" content="Felicia Ho's Design Studio - 個人設計工作室，包含UI/UX設計、橫幅設計等服務">
+  <meta name="keywords" content="Felicia Ho, 設計工作室, 網頁開發, LP一頁式網站, Landing Page,品牌官網,前端開發, UI/UX設計, 橫幅設計">
+  <meta name="author" content="Felicia Ho">
+  <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <title>Felicia Ho's Portfolio</title>
+  <title>Felicia Ho's Portfolio - 設計工作室</title>
+  <link rel="canonical" href="https://feliciaho.github.io/">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="shortcut icon" href="images/heartIcon.ico">
+  <meta property="og:title" content="Felicia Ho's Portfolio">
+  <meta property="og:description" content="Felicia Ho's Design Studio - 個人設計工作室">
   <meta property="og:image" content="images/portfolioBanner.jpg" />
+  <meta property="og:url" content="https://feliciaho.github.io/">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Felicia Ho",
+    "jobTitle": "Designer",
+    "url": "https://feliciaho.github.io/",
+    "sameAs": [
+      "https://www.instagram.com/felicia_design_work/",
+      "https://line.me/ti/p/felicia27tw"
+    ],
+    "description": "Felicia Ho's Design Studio - 提供UI/UX設計、橫幅設計等服務"
+  }
+  </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="sass/app.css">
   <link rel="stylesheet" href="https://use.typekit.net/yif6mwx.css">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KC9HGZ2P');</script>
+  <!-- End Google Tag Manager -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.js"></script>
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC9HGZ2P"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div id="app">
     <div id="tsparticles"></div>
     <!-- navBar -->
@@ -121,14 +155,14 @@
             </a>
             <a target="_blank" rel="noreferrer noopener" :href=i.figmaUrl v-if="i.figma === true">
               <div class="figmaIcon">Figma
-                <img src="./images/figma.png" alt="">
+                <img src="./images/figma.png" alt="Figma 設計工具連結">
               </div>
             </a>
           </div>
         </div>
         <!-- banner -->
         <div class="banner"><a :href=i.webUrl target="_blank">
-            <img :src=i.img></a>
+            <img :src=i.img :alt="i.name + ' 專案橫幅'"></a>
           <div class="mask">
             <label class="seemore">see more</label>
           </div>
@@ -158,7 +192,7 @@
         </div>
         <!-- banner -->
         <div class="banner"><a :href=i.webUrl target="_blank">
-            <img :src=i.img></a>
+            <img :src=i.img :alt="i.name + ' 公司專案橫幅'"></a>
           <div class="mask">
             <label class="seemore">see more</label>
           </div>
@@ -183,7 +217,7 @@
           <div class="swiper mySwiper1">
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="(img, key) in i.img" :key="key">
-                <img :src="img" />
+                <img :src="img" :alt="i.name + ' UIUX 設計圖片 ' + (key+1)" />
               </div>
             </div>
             <div class="swiper-button-next"></div>
@@ -199,7 +233,7 @@
       <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="(i,key) in 25" :key="i">
-            <img :src="`images/banner/${i}.jpg`" />
+            <img :src="`images/banner/${i}.jpg`" :alt="'橫幅設計作品 ' + i" />
           </div>
         </div>
         <div class="swiper-pagination"></div>

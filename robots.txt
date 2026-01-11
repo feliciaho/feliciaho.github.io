@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://feliciaho.github.io/sitemap.xml
