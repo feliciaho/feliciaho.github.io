@@ -88,10 +88,10 @@
               <a class="nav-link" @click.prevent="scrollToTop('#s1')">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" @click.prevent="scrollToTop('#s2')">Side Projects</a>
+              <a class="nav-link" @click.prevent="scrollToTop('#s2')">Official Website</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" @click.prevent="scrollToTop('#s3')">Company Projects</a>
+              <a class="nav-link" @click.prevent="scrollToTop('#s3')">Landing Page</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" @click.prevent="scrollToTop('#s4')">UIUX</a>
@@ -133,8 +133,8 @@
         </div>
     </section>
     <section class="s2" id="s2">
-      <h1 class="secTitle">Side Projects</h1>
-      <div class="project" v-for="(i,key) in sideProjects" :key="i">
+      <h1 class="secTitle">Official Website</h1>
+      <div class="project" v-for="(i,key) in officialProjects" :key="i">
         <!-- text -->
         <div class="secText">
           <h2 class="projectTitle">Project {{key+1}}</h2>
@@ -170,8 +170,8 @@
       </div>
     </section>
     <section class="s3" id="s3">
-      <h1 class="secTitle">Company Projects</h1>
-      <div class="project" v-for="(i,key) in companyProjects" :key="i">
+      <h1 class="secTitle">Landing Page</h1>
+      <div class="project" v-for="(i,key) in LpProjects" :key="i">
         <!-- text -->
         <div class="secText">
           <h2 class="projectTitle">Project {{key+1}}</h2>
@@ -192,7 +192,7 @@
         </div>
         <!-- banner -->
         <div class="banner"><a :href=i.webUrl target="_blank">
-            <img :src=i.img :alt="i.name + ' 公司專案橫幅'"></a>
+            <img :src=i.img :alt="i.name + ' 專案橫幅'"></a>
           <div class="mask">
             <label class="seemore">see more</label>
           </div>

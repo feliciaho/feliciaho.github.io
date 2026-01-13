@@ -33,43 +33,7 @@ const App = {
           ],
         },
       ],
-      companyProjects: [
-        {
-          chName: "異象回聲",
-          name: "EOV official website",
-          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
-          webUrl: "https://eov.mangot5.com/eov/index",
-          githubUrl: "https://github.com/feliciaho/eov",
-          img: "images/eovBanner.png",
-        },
-        {
-          chName: "失落的方舟活動頁",
-          name: "LostArk landing page",
-          skills: ["Pug", "SASS", "jQuery", "Vue", "Gulp", "CICD"],
-          webUrl:
-            "https://landing.mangot5.com/template/lostark/event/250327_pletze/index.html",
-          githubUrl: "https://github.com/feliciaho/250327_pletze",
-          img: "images/lostarkBanner.jpg",
-        },
-        {
-          chName: "黑色契約活動頁",
-          name: "Cabel landing page",
-          skills: ["HTML", "SASS", "javascript", "Vue", "RESTful API"],
-          webUrl: "https://feliciaho.github.io/cbo_20240129",
-          githubUrl: "https://github.com/feliciaho/cbo_20240129",
-          img: "images/cboBanner.png",
-        },
-      ],
-      sideProjects: [
-        {
-          chName: "食譜網站",
-          name: "Recipe website",
-          skills: ["HTML", "SASS", "javascript", "RESTful API", "Vue", "Vite"],
-          webUrl: "https://feliciaho.github.io/recipeWeb_new/#/homeView",
-          githubUrl: "https://github.com/feliciaho/recipeWeb_new",
-          figma: false,
-          img: "images/recipeBanner.jpg",
-        },
+      officialProjects: [
         {
           chName: "民宿訂房網站",
           name: "Homestay website",
@@ -88,6 +52,58 @@ const App = {
           figma: true,
           figmaUrl: "https://www.figma.com/design/IWVbELJiG1oS9CLWX8PUBx/Hotel-Booking-Web?node-id=0-1&p=f",
           img: "images/bookingBanner.jpg",
+        },
+        {
+          chName: "異象回聲官網",
+          name: "EOV official website",
+          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
+          webUrl: "https://eov.mangot5.com/eov/index",
+          githubUrl: "https://github.com/feliciaho/eov",
+          img: "images/eovBanner.png",
+        },
+        {
+          chName: "食譜網站",
+          name: "Recipe website",
+          skills: ["HTML", "SASS", "javascript", "RESTful API", "Vue", "Vite"],
+          webUrl: "https://feliciaho.github.io/recipeWeb_new/#/homeView",
+          githubUrl: "https://github.com/feliciaho/recipeWeb_new",
+          figma: false,
+          img: "images/recipeBanner.jpg",
+        },
+      ],
+      LpProjects: [
+        {
+          chName: "笑傲江湖一周年活動頁",
+          name: "EOV official website",
+          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
+          webUrl: "https://landing.mangot5.com/template/xa/event/250113_anniversary/index.html",
+          githubUrl: "https://github.com/feliciaho/250113_anniversary",
+          img: "images/xaBanner.jpg",
+        },
+        {
+          chName: "夏普左右開冰箱活動頁",
+          name: "Sharpe landing page",
+          skills: ["HTML", "CSS", "jQuery"],
+          webUrl: "https://tw.sharp/refrigerator/2511event_dualdoor/index.html",
+          githubUrl: "https://github.com/feliciaho/202511_refrigerator_SP",
+          img: "images/sharpBanner.jpg",
+        },
+        {
+          chName: "失落的方舟活動頁",
+          name: "LostArk landing page",
+          skills: ["Pug", "SASS", "jQuery", "Vue", "Gulp", "CICD"],
+          webUrl:
+            "https://landing.mangot5.com/template/lostark/event/250327_pletze/index.html",
+          githubUrl: "https://github.com/feliciaho/250327_pletze",
+          img: "images/lostarkBanner.jpg",
+        },
+        {
+          chName: "黑色契約活動頁",
+          name: "Cabel landing page",
+          skills: ["HTML", "SASS", "javascript", "Vue", "RESTful API"],
+          webUrl: "https://feliciaho.github.io/cbo_20240129",
+          githubUrl: "https://github.com/feliciaho/cbo_20240129",
+          img: "images/cboBanner.png",
         },
       ],
       uiux: [
