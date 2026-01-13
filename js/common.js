@@ -73,12 +73,22 @@ const App = {
       ],
       LpProjects: [
         {
-          chName: "笑傲江湖一周年活動頁",
-          name: "EOV official website",
+          chName: "彩虹島活動頁",
+          name: "Latale landing page",
           skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
-          webUrl: "https://landing.mangot5.com/template/xa/event/250113_anniversary/index.html",
-          githubUrl: "https://github.com/feliciaho/250113_anniversary",
-          img: "images/xaBanner.jpg",
+          webUrl:
+            "https://landing.mangot5.com/template/la/event/240711_invernell/index.html",
+          githubUrl: "https://github.com/feliciaho/240711_invernell",
+          img: "images/lataleBanner.jpg",
+        },
+        {
+          chName: "巨商活動頁",
+          name: "Gersang landing page",
+          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
+          webUrl:
+            "https://landing.mangot5.com/template/gs/event/240712_thunderroar/index.html",
+          githubUrl: "https://github.com/feliciaho/240712_thunderroar",
+          img: "images/gersangBanner.jpg",
         },
         {
           chName: "夏普左右開冰箱活動頁",
@@ -89,6 +99,14 @@ const App = {
           img: "images/sharpBanner.jpg",
         },
         {
+          chName: "笑傲江湖一周年活動頁",
+          name: "EOV official website",
+          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
+          webUrl: "https://landing.mangot5.com/template/xa/event/250113_anniversary/index.html",
+          githubUrl: "https://github.com/feliciaho/250113_anniversary",
+          img: "images/xaBanner.jpg",
+        },
+        {
           chName: "失落的方舟活動頁",
           name: "LostArk landing page",
           skills: ["Pug", "SASS", "jQuery", "Vue", "Gulp", "CICD"],
@@ -97,14 +115,15 @@ const App = {
           githubUrl: "https://github.com/feliciaho/250327_pletze",
           img: "images/lostarkBanner.jpg",
         },
-        {
-          chName: "黑色契約活動頁",
-          name: "Cabel landing page",
-          skills: ["HTML", "SASS", "javascript", "Vue", "RESTful API"],
-          webUrl: "https://feliciaho.github.io/cbo_20240129",
-          githubUrl: "https://github.com/feliciaho/cbo_20240129",
-          img: "images/cboBanner.png",
-        },
+
+        // {
+        //   chName: "黑色契約活動頁",
+        //   name: "Cabel landing page",
+        //   skills: ["HTML", "SASS", "javascript", "Vue", "RESTful API"],
+        //   webUrl: "https://feliciaho.github.io/cbo_20240129",
+        //   githubUrl: "https://github.com/feliciaho/cbo_20240129",
+        //   img: "images/cboBanner.png",
+        // },
       ],
       uiux: [
         {
