@@ -37,19 +37,22 @@
   <link rel="stylesheet" href="sass/app.css">
   <link rel="stylesheet" href="https://use.typekit.net/yif6mwx.css">
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KC9HGZ2P');</script>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KC9HGZ2P');</script>
   <!-- End Google Tag Manager -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.js"></script>
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC9HGZ2P"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC9HGZ2P" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <div id="app">
     <div id="tsparticles"></div>
@@ -74,7 +77,7 @@
                 <rect x="2.5" y="2.5" width="19" height="19" rx="4.5" />
               </g>
               <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="white"
-                font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="6.5">LINE</text>
+                font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="6.5" letter-spacing="0px">LINE</text>
             </svg>
           </a>
         </div>
@@ -175,7 +178,7 @@
         <!-- text -->
         <div class="secText">
           <h2 class="projectTitle">Project {{key+1}}</h2>
-          <p>{{i.chName}}<span>{{i.name}}</span></p>
+          <p>{{i.chName}}<br><span>{{i.name}}</span></p>
           <div class="skillWrap">
             <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
           </div>
@@ -262,12 +265,12 @@
                 <rect x="2.5" y="2.5" width="19" height="19" rx="4.5" />
               </g>
               <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="white"
-                font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="6.5">LINE</text>
+                font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="6.5" letter-spacing="0px">LINE</text>
             </svg>
           </a>
         </li>
       </ul>
-      <div class="title">© 2024 Felica Ho. All rights reserved.</div>
+      <div class="title">© 2026 Felica Ho. All rights reserved.</div>
     </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
