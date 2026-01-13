@@ -86,9 +86,9 @@ body {
   background-image: url("../images/BG.jpg");
   color: white;
   text-align: center;
-  font-family: "the-seasons", sans-serif;
-  font-weight: 500;
-  font-style: heavy;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0.1rem;
   font-size: 18px;
@@ -112,6 +112,8 @@ body header {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  font-weight: 300;
+  font-style: italic;
 }
 body header .mainTitle {
   position: relative;
@@ -198,11 +200,7 @@ section {
 section h1.secTitle {
   font-size: clamp(2rem, 3vw, 4rem);
   margin: 3%;
-}
-section h2.projectTitle {
-  font-size: clamp(2rem, 3vw, 3rem);
-  color: #ffc5e7;
-  margin: 8% 0 0 0;
+  font-style: italic;
 }
 section span {
   border: unset;
