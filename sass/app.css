@@ -196,16 +196,17 @@ section {
     margin-top: 10vh;
   }
 }
+section h2 {
+  color: white;
+  margin: 3% 0;
+}
 section h1.secTitle {
   font-size: clamp(2rem, 3vw, 4rem);
   margin: 3%;
 }
 section span {
   border: unset;
-  border-left: 1px solid #ffc5e7;
-  padding: 0 10px;
-  margin: 0 10px;
-  font-size: clamp(1.1rem, 1.5vw, 2rem);
+  font-size: clamp(1.1rem, 1.3vw, 2rem);
 }
 section p {
   font-size: clamp(1.3rem, 2vw, 2rem);
@@ -256,6 +257,9 @@ section .project {
 }
 section .project:nth-child(odd) {
   flex-direction: row-reverse;
+}
+section .project:nth-last-child(1) {
+  border: none;
 }
 @media only screen and (max-width: 991px) {
   section .project {
@@ -310,7 +314,7 @@ section .secText_s1 .secTitleWrap {
     flex-direction: column;
   }
 }
-section .secTextUiux {
+section .secTextUiux, section .secTextVisual {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -320,7 +324,24 @@ section .secTextUiux {
   padding: 2vh 20px;
 }
 @media only screen and (max-width: 991px) {
-  section .secTextUiux {
+  section .secTextUiux, section .secTextVisual {
+    width: 100%;
+    align-content: flex-start;
+    padding: unset;
+  }
+}
+section .secTextVisual {
+  width: 40%;
+}
+@media only screen and (max-width: 991px) {
+  section .secTextVisual {
+    width: 100%;
+    align-content: flex-start;
+    padding: unset;
+  }
+}
+@media only screen and (max-width: 991px) {
+  section {
     width: 100%;
     align-content: flex-start;
     padding: unset;
@@ -403,7 +424,7 @@ section .banner:hover .mask {
 section .banner:hover img {
   transform: scale(1.1);
 }
-section .bannerUiux {
+section .bannerUiux, section .bannerVisual {
   width: 65%;
   position: relative;
   overflow: hidden;
@@ -412,12 +433,24 @@ section .bannerUiux {
   height: fit-content;
 }
 @media only screen and (max-width: 991px) {
-  section .bannerUiux {
+  section .bannerUiux, section .bannerVisual {
     width: unset;
     margin: 5vh 0;
   }
 }
-section .bannerUiux:hover img {
+section .bannerUiux:hover img, section .bannerVisual:hover img {
+  transform: unset;
+}
+section .bannerVisual {
+  width: 45%;
+}
+@media only screen and (max-width: 991px) {
+  section .bannerVisual {
+    width: unset;
+    margin: 5vh 0;
+  }
+}
+section .bannerVisual:hover img {
   transform: unset;
 }
 
@@ -570,10 +603,64 @@ footer .footerImg {
 .s5 .swiper {
   overflow-x: hidden;
   width: 100%;
+  max-width: 800px;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 991px) {
+  .s5 .swiper {
+    padding-top: 0;
+  }
+}
+.s5 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+  height: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.s5 .swiper-slide img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .s5 .swiper-slide img {
+    border-radius: 10px;
+  }
+}
+.s5 .swiper .swiper-button-prev, .s5 .swiper .swiper-button-next {
+  top: 50%;
+  width: 55px;
+  height: 55px;
+  z-index: 9;
+  transition: 0.3s all;
+  color: #ffc5e7;
+  background: rgba(0, 0, 0, 0.7529411765);
+  border-radius: 20px;
+  opacity: 0.5;
+  border: 2px solid #ffffff;
+}
+.s5 .swiper .swiper-button-prev:after, .s5 .swiper .swiper-button-next:after {
+  font-size: 25px;
+}
+.s5 .swiper .swiper-button-prev:hover, .s5 .swiper .swiper-button-prev:focus, .s5 .swiper .swiper-button-prev.active, .s5 .swiper .swiper-button-next:hover, .s5 .swiper .swiper-button-next:focus, .s5 .swiper .swiper-button-next.active {
+  opacity: 1;
+}
+@media only screen and (max-width: 991px) {
+  .s5 .swiper .swiper-button-prev, .s5 .swiper .swiper-button-next {
+    display: none;
+  }
+}
+
+.s6 .swiper {
+  overflow-x: hidden;
+  width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.s5 .swiper-slide {
+.s6 .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 600px;
@@ -582,16 +669,16 @@ footer .footerImg {
   margin: auto -20px;
 }
 @media only screen and (max-width: 767px) {
-  .s5 .swiper-slide {
+  .s6 .swiper-slide {
     width: 500px;
   }
 }
 @media only screen and (max-width: 480px) {
-  .s5 .swiper-slide {
+  .s6 .swiper-slide {
     width: 280px;
   }
 }
-.s5 .swiper-slide img {
+.s6 .swiper-slide img {
   display: inline-block;
   width: 100%;
 }

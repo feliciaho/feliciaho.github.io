@@ -93,21 +93,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
+            <!-- <li class="nav-item">
+              <a class="nav-link" @click.prevent="scrollToTop('#s1')">Services</a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" @click.prevent="scrollToTop('#s1')">Service</a>
+              <a class="nav-link" @click.prevent="scrollToTop('#s5')">Campaigns</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" @click.prevent="scrollToTop('#s2')">Official Website</a>
+              <a class="nav-link" @click.prevent="scrollToTop('#s2')">Websites</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" @click.prevent="scrollToTop('#s3')">Landing Page</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" @click.prevent="scrollToTop('#s4')">UIUX</a>
+              <a class="nav-link" @click.prevent="scrollToTop('#s4')">UI/UX</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" @click.prevent="scrollToTop('#s5')">Banner</a>
-            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" @click.prevent="scrollToTop('#s6')">Marketing Graphics</a>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -125,8 +128,8 @@
       </div>
     </header>
     <!-- section1 -->
-    <section class="s1" id="s1">
-      <h1 class="secTitle">Service</h1>
+    <!-- <section class="s1" id="s1">
+      <h1 class="secTitle">Services</h1>
       <div class="project_s1" v-for="(i,key) in services" :key="i">
         <div class="secText_s1">
           <div class="secTitleWrap">
@@ -140,13 +143,41 @@
             <li v-for="(i,key) in i.list" :key="i + 'list'">{{ i }}</li>
           </ul>
         </div>
+    </section> -->
+    <section class="s5" id="s5">
+      <h1 class="secTitle">Campaigns</h1>
+      <div class="project" v-for="(i,key) in designProjects" :key="i">
+        <!-- text -->
+        <div class="secTextVisual">
+          <h2 class="projectTitle">Project {{key+1}}</h2>
+          <p>{{i.chName}}<br><span>{{i.name}}</span></p>
+                    <div class="skillWrap">
+            <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
+          </div>
+          <!-- icon -->
+        </div>
+        <!-- banner -->
+        <div class="bannerVisual">
+          <!-- Swiper -->
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="(img, key) in i.img" :key="key">
+                <img :src="img" :alt="i.name + ' 設計圖片 ' + (key+1)" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="s2" id="s2">
-      <h1 class="secTitle">Official Website</h1>
+      <h1 class="secTitle">Websites</h1>
       <div class="project" v-for="(i,key) in officialProjects" :key="i">
         <!-- text -->
         <div class="secText">
-          <p>{{i.chName}}<span>{{i.name}}</span></p>
+          <p>{{i.chName}}<br><span>{{i.name}}</span></p>
           <div class="skillWrap">
             <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
           </div>
@@ -207,7 +238,7 @@
       </div>
     </section>
     <section class="s4" id="s4">
-      <h1 class="secTitle">UIUX</h1>
+      <h1 class="secTitle">UI/UX</h1>
       <div class="project" v-for="(i,key) in uiux" :key="i">
         <!-- text -->
         <div class="secTextUiux">
@@ -234,18 +265,17 @@
         </div>
       </div>
     </section>
-    <section class="s5" id="s5">
-      <h1 class="secTitle">Banner</h1>
-      <!-- Swiper -->
+    <!-- <section class="s6" id="s6">
+      <h1 class="secTitle">Marketing Graphics</h1>
       <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" v-for="(i,key) in 25" :key="i">
+          <div class="swiper-slide" v-for="(i,key) in 18" :key="i">
             <img :src="`images/banner/${i}.jpg`" :alt="'橫幅設計作品 ' + i" />
           </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </section> -->
     <!-- footer -->
     <footer>
       <ul class="footerImg">

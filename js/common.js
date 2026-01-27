@@ -55,7 +55,7 @@ const App = {
         },
         {
           chName: "異象回聲官網",
-          name: "EOV official website",
+          name: "EOV official Website",
           skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
           webUrl: "https://eov.mangot5.com/eov/index",
           githubUrl: "https://github.com/feliciaho/eov",
@@ -100,7 +100,7 @@ const App = {
         },
         {
           chName: "笑傲江湖一周年活動頁",
-          name: "EOV official website",
+          name: "XA landing page",
           skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
           webUrl: "https://landing.mangot5.com/template/xa/event/250113_anniversary/index.html",
           githubUrl: "https://github.com/feliciaho/250113_anniversary",
@@ -128,7 +128,7 @@ const App = {
       uiux: [
         {
           chName: "黑色契約電腦版官網",
-          name: "Cabel official website",
+          name: "Cabel official Websites",
           webUrl: "https://cbo.digeam.com/index",
           img: [
             "images/cabelOfficial/1.jpg",
@@ -160,6 +160,67 @@ const App = {
             "images/flyff/1.jpg",
             "images/flyff/2.jpg",
             "images/flyff/3.jpg",
+          ],
+        },
+      ],
+      designProjects: [
+        {
+          chName: "《傳說對決》令月「墮天碎冠」造型行銷設計",
+          name: "Arena of Valor: Hero Skin Marketing Visual",
+          img: [
+            "images/aovYue/01.jpg",
+            "images/aovYue/02.jpg",
+            "images/aovYue/03.jpg",
+            "images/aovYue/04.jpg",
+            "images/aovYue/05.jpg",
+            "images/aovYue/06.jpg",
+          ],
+          skills: [
+            "photoshop",
+            "illustrator",
+            "nano Banana",
+          ],
+        },
+        {
+          chName: "《新楓之谷》社群行銷活動設計",
+          name: "MapleStory Social Marketing Design",
+          img: [
+            "images/mapleStory/01.jpg",
+            "images/mapleStory/02.jpg",
+          ],
+          skills: [
+            "photoshop",
+            "illustrator",
+          ],
+        },
+        {
+          chName: "《失落的方舟》改版活動行銷專案",
+          name: "Lost Ark: Seasonal Update Marketing Design",
+          img: [
+            "images/Lostark/01.jpg",
+            "images/Lostark/02.jpg",
+            "images/Lostark/03.jpg",
+            "images/Lostark/04.jpg",
+            "images/Lostark/05.jpg",
+          ],
+          skills: [
+            "photoshop",
+            "illustrator",
+            "midjourney",
+            "leonardo.ai",
+            "playground ai",
+          ],
+        },
+        {
+          chName: "冬季新品上市行銷視覺",
+          name: "Winter Collection E-commerce Visual",
+          img: [
+            "images/clothes/01.jpg",
+            "images/clothes/02.jpg",
+          ],
+          skills: [
+            "photoshop",
+            "illustrator",
           ],
         },
       ],
