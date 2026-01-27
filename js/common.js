@@ -197,11 +197,11 @@ const App = {
           chName: "《失落的方舟》改版活動行銷專案",
           name: "Lost Ark: Seasonal Update Marketing Design",
           img: [
-            "images/Lostark/01.jpg",
-            "images/Lostark/02.jpg",
-            "images/Lostark/03.jpg",
-            "images/Lostark/04.jpg",
-            "images/Lostark/05.jpg",
+            "images/lostark/01.jpg",
+            "images/lostark/02.jpg",
+            "images/lostark/03.jpg",
+            "images/lostark/04.jpg",
+            "images/lostark/05.jpg",
           ],
           skills: [
             "photoshop",
