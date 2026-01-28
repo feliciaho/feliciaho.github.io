@@ -35,8 +35,8 @@ const App = {
       ],
       officialProjects: [
         {
-          chName: "民宿訂房網站",
-          name: "Homestay website",
+          chName: "民宿訂房網頁設計與開發",
+          name: "Hostel Booking Website UIUX Design & Development",
           skills: [
             "Figma",
             "Figma MCP to Crusor",
@@ -54,27 +54,27 @@ const App = {
           img: "images/bookingBanner.jpg",
         },
         {
-          chName: "異象回聲官網",
-          name: "EOV official Website",
-          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
-          webUrl: "https://eov.mangot5.com/eov/index",
-          githubUrl: "https://github.com/feliciaho/eov",
-          img: "images/eovBanner.png",
-        },
-        {
-          chName: "食譜網站",
-          name: "Recipe website",
+          chName: "食譜訂房網頁設計與開發",
+          name: "Recipe Website Design & Development",
           skills: ["HTML", "SASS", "javascript", "RESTful API", "Vue", "Vite"],
           webUrl: "https://feliciaho.github.io/recipeWeb_new/#/homeView",
           githubUrl: "https://github.com/feliciaho/recipeWeb_new",
           figma: false,
           img: "images/recipeBanner.jpg",
         },
+        {
+          chName: "異象回聲官網",
+          name: "EOV: Official Website Development",
+          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
+          webUrl: "https://eov.mangot5.com/eov/index",
+          githubUrl: "https://github.com/feliciaho/eov",
+          img: "images/eovBanner.png",
+        },
       ],
       LpProjects: [
         {
           chName: "彩虹島活動頁",
-          name: "Latale landing page",
+          name: "Latale: Landing Page Website Development",
           skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
           webUrl:
             "https://landing.mangot5.com/template/la/event/240711_invernell/index.html",
@@ -83,7 +83,7 @@ const App = {
         },
         {
           chName: "巨商活動頁",
-          name: "Gersang landing page",
+          name: "Gersang: Landing Page Website Development",
           skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
           webUrl:
             "https://landing.mangot5.com/template/gs/event/240712_thunderroar/index.html",
@@ -91,44 +91,43 @@ const App = {
           img: "images/gersangBanner.jpg",
         },
         {
-          chName: "夏普左右開冰箱活動頁",
-          name: "Sharpe landing page",
-          skills: ["HTML", "CSS", "jQuery"],
-          webUrl: "https://tw.sharp/refrigerator/2511event_dualdoor/index.html",
-          githubUrl: "https://github.com/feliciaho/202511_refrigerator_SP",
-          img: "images/sharpBanner.jpg",
-        },
-        {
-          chName: "笑傲江湖一周年活動頁",
-          name: "XA landing page",
+          chName: "笑傲江湖一周年活動頁開發",
+          name: "XA: Landing Page Website Development",
           skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
           webUrl: "https://landing.mangot5.com/template/xa/event/250113_anniversary/index.html",
           githubUrl: "https://github.com/feliciaho/250113_anniversary",
           img: "images/xaBanner.jpg",
         },
         {
-          chName: "失落的方舟活動頁",
-          name: "LostArk landing page",
+          chName: "失落的方舟活動頁開發",
+          name: "LostArk: Landing Page Website Development",
           skills: ["Pug", "SASS", "jQuery", "Vue", "Gulp", "CICD"],
           webUrl:
             "https://landing.mangot5.com/template/lostark/event/250327_pletze/index.html",
           githubUrl: "https://github.com/feliciaho/250327_pletze",
           img: "images/lostarkBanner.jpg",
         },
-
+        {
+          chName: "夏普左右開冰箱活動頁",
+          name: "Sharpe: Landing Page Website Development",
+          skills: ["HTML", "CSS", "jQuery"],
+          webUrl: "https://tw.sharp/refrigerator/2511event_dualdoor/index.html",
+          githubUrl: "https://github.com/feliciaho/202511_refrigerator_SP",
+          img: "images/sharpBanner.jpg",
+        },
         // {
         //   chName: "黑色契約活動頁",
-        //   name: "Cabel landing page",
+        //   name: "Cabel Landing Page",
         //   skills: ["HTML", "SASS", "javascript", "Vue", "RESTful API"],
         //   webUrl: "https://feliciaho.github.io/cbo_20240129",
         //   githubUrl: "https://github.com/feliciaho/cbo_20240129",
         //   img: "images/cboBanner.png",
         // },
       ],
-      uiux: [
+      websiteDesign: [
         {
-          chName: "黑色契約電腦版官網",
-          name: "Cabel official Websites",
+          chName: "黑色契約電腦版官網UIUX設計",
+          name: "Cabel: Official Website UIUX Design",
           webUrl: "https://cbo.digeam.com/index",
           img: [
             "images/cabelOfficial/1.jpg",
@@ -137,25 +136,25 @@ const App = {
           ],
         },
         {
-          chName: "黑色契約活動頁",
-          name: "Cabel landing page",
+          chName: "黑色契約活動頁設計",
+          name: "Cabel: Landing Page Website Design",
           webUrl: "https://cbo.digeam.com/OBT",
           img: ["images/cabelActivity/1.jpg"],
         },
         {
           chName: "搞鬼聖誕轉轉樂活動頁",
-          name: "Ghost landing page",
+          name: "Ghost: Landing Page  Website Design",
           webUrl: "https://feliciaho.github.io/ghost_20231220",
           img: ["images/ghost/1.jpg", "images/ghost/2.jpg"],
         },
         {
           chName: "仙俠活動頁",
-          name: "XX2 landing page",
+          name: "XX2: Landing Page Website Design",
           img: ["images/xx2/1.jpg", "images/xx2/2.jpg"],
         },
         {
           chName: "夢想飛飛兩周年慶活動頁",
-          name: "flyff landing page",
+          name: "Flyff: Landing Page Website Design",
           img: [
             "images/flyff/1.jpg",
             "images/flyff/2.jpg",
@@ -166,7 +165,7 @@ const App = {
       designProjects: [
         {
           chName: "《傳說對決》令月「墮天碎冠」造型行銷設計",
-          name: "Arena of Valor: Hero Skin Marketing Visual",
+          name: "Arena of Valor: Hero Skin Marketing Design",
           img: [
             "images/aovYue/01.jpg",
             "images/aovYue/02.jpg",
@@ -183,7 +182,7 @@ const App = {
         },
         {
           chName: "《新楓之谷》社群行銷活動設計",
-          name: "MapleStory Social Marketing Design",
+          name: "MapleStory: Social Marketing Design",
           img: [
             "images/mapleStory/01.jpg",
             "images/mapleStory/02.jpg",
@@ -194,7 +193,7 @@ const App = {
           ],
         },
         {
-          chName: "《失落的方舟》改版活動行銷專案",
+          chName: "《失落的方舟》改版活動行銷設計",
           name: "Lost Ark: Seasonal Update Marketing Design",
           img: [
             "images/lostark/01.jpg",
@@ -212,7 +211,25 @@ const App = {
           ],
         },
         {
-          chName: "冬季新品上市行銷視覺",
+          chName: "《AVA戰地之王》改版活動行銷設計",
+          name: " A.V.A: Seasonal Update Marketing Design",
+          img: [
+            "images/avaBanner/01.png",
+            "images/avaBanner/02.jpg",
+            "images/avaBanner/03.jpg",
+            "images/avaBanner/04.png",
+
+          ],
+          skills: [
+            "photoshop",
+            "illustrator",
+            "midjourney",
+            "leonardo.ai",
+            "playground ai",
+          ],
+        },
+        {
+          chName: "冬季新品上市電商行銷視覺",
           name: "Winter Collection E-commerce Visual",
           img: [
             "images/clothes/01.jpg",
@@ -221,6 +238,56 @@ const App = {
           skills: [
             "photoshop",
             "illustrator",
+          ],
+        },
+      ],
+      printProjects: [
+        {
+          chName: "《AVA 戰地之王》線下賽：印刷物與數位視覺設計",
+          name: "A.V.A Offline Tournament: Print & Digital Media Design",
+          img: [
+            "images/avaPrint/01.jpg",
+            "images/avaPrint/02.jpg",
+            "images/avaPrint/03.jpg",
+            "images/avaPrint/04.jpg",
+            "images/avaPrint/05.jpg",
+          ],
+          skills: [
+            "photoshop",
+            "illustrator",
+          ],
+        },
+        {
+          chName: "《勁舞團》線下賽：印刷物設計",
+          name: "Audition Offline Tournament: Print Media Design",
+          img: [
+            "images/auditionPrint/01.jpg",
+            "images/auditionPrint/02.jpg",
+            "images/auditionPrint/03.jpg",
+            "images/auditionPrint/04.jpg",
+          ],
+          skills: [
+            "photoshop",
+            "illustrator",
+          ],
+        },
+      ],
+      industrialProjects: [
+        {
+          chName: "PANRADISE 眼睛舒緩套組：產品開發與視覺設計",
+          name: "PANRADISE: Eye Relief Set Product Design & Visualization",
+          img: [
+            "images/industrial/01.jpg",
+            "images/industrial/02.jpg",
+            "images/industrial/03.jpg",
+            "images/industrial/04.jpg",
+            "images/industrial/05.jpg",
+          ],
+          skills: [
+            "photoshop",
+            "illustrator",
+            "keyshot",
+            "solidworks",
           ],
         },
       ],

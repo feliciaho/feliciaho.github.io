@@ -600,18 +600,18 @@ footer .footerImg {
   }
 }
 
-.s5 .swiper {
+.s5 .swiper, .s7 .swiper, .s8 .swiper {
   overflow-x: hidden;
   width: 100%;
   max-width: 800px;
   padding-bottom: 50px;
 }
 @media only screen and (max-width: 991px) {
-  .s5 .swiper {
+  .s5 .swiper, .s7 .swiper, .s8 .swiper {
     padding-top: 0;
   }
 }
-.s5 .swiper-slide {
+.s5 .swiper-slide, .s7 .swiper-slide, .s8 .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 600px;
@@ -620,17 +620,17 @@ footer .footerImg {
   display: flex;
   align-items: center;
 }
-.s5 .swiper-slide img {
+.s5 .swiper-slide img, .s7 .swiper-slide img, .s8 .swiper-slide img {
   display: inline-block;
   width: 100%;
   border-radius: 20px;
 }
 @media only screen and (max-width: 991px) {
-  .s5 .swiper-slide img {
+  .s5 .swiper-slide img, .s7 .swiper-slide img, .s8 .swiper-slide img {
     border-radius: 10px;
   }
 }
-.s5 .swiper .swiper-button-prev, .s5 .swiper .swiper-button-next {
+.s5 .swiper .swiper-button-prev, .s5 .swiper .swiper-button-next, .s7 .swiper .swiper-button-prev, .s7 .swiper .swiper-button-next, .s8 .swiper .swiper-button-prev, .s8 .swiper .swiper-button-next {
   top: 50%;
   width: 55px;
   height: 55px;
@@ -642,14 +642,14 @@ footer .footerImg {
   opacity: 0.5;
   border: 2px solid #ffffff;
 }
-.s5 .swiper .swiper-button-prev:after, .s5 .swiper .swiper-button-next:after {
+.s5 .swiper .swiper-button-prev:after, .s5 .swiper .swiper-button-next:after, .s7 .swiper .swiper-button-prev:after, .s7 .swiper .swiper-button-next:after, .s8 .swiper .swiper-button-prev:after, .s8 .swiper .swiper-button-next:after {
   font-size: 25px;
 }
-.s5 .swiper .swiper-button-prev:hover, .s5 .swiper .swiper-button-prev:focus, .s5 .swiper .swiper-button-prev.active, .s5 .swiper .swiper-button-next:hover, .s5 .swiper .swiper-button-next:focus, .s5 .swiper .swiper-button-next.active {
+.s5 .swiper .swiper-button-prev:hover, .s5 .swiper .swiper-button-prev:focus, .s5 .swiper .swiper-button-prev.active, .s5 .swiper .swiper-button-next:hover, .s5 .swiper .swiper-button-next:focus, .s5 .swiper .swiper-button-next.active, .s7 .swiper .swiper-button-prev:hover, .s7 .swiper .swiper-button-prev:focus, .s7 .swiper .swiper-button-prev.active, .s7 .swiper .swiper-button-next:hover, .s7 .swiper .swiper-button-next:focus, .s7 .swiper .swiper-button-next.active, .s8 .swiper .swiper-button-prev:hover, .s8 .swiper .swiper-button-prev:focus, .s8 .swiper .swiper-button-prev.active, .s8 .swiper .swiper-button-next:hover, .s8 .swiper .swiper-button-next:focus, .s8 .swiper .swiper-button-next.active {
   opacity: 1;
 }
 @media only screen and (max-width: 991px) {
-  .s5 .swiper .swiper-button-prev, .s5 .swiper .swiper-button-next {
+  .s5 .swiper .swiper-button-prev, .s5 .swiper .swiper-button-next, .s7 .swiper .swiper-button-prev, .s7 .swiper .swiper-button-next, .s8 .swiper .swiper-button-prev, .s8 .swiper .swiper-button-next {
     display: none;
   }
 }

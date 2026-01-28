@@ -42,7 +42,7 @@ document.querySelectorAll(".project_s1").forEach((project_s1) => {
   });
 });
 
-document.querySelectorAll(".banner").forEach((banner) => {
+document.querySelectorAll(".banner, .bannerVisual").forEach((banner) => {
   gsap.to(banner, {
     yPercent: -10,
     ease: "none",

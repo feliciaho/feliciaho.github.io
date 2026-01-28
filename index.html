@@ -97,17 +97,23 @@
               <a class="nav-link" @click.prevent="scrollToTop('#s1')">Services</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" @click.prevent="scrollToTop('#s5')">Campaigns</a>
+              <a class="nav-link" @click.prevent="scrollToTop('#s5')">Marketing Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" @click.prevent="scrollToTop('#s8')">Print Design</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" @click.prevent="scrollToTop('#s2')">Websites</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" @click.prevent="scrollToTop('#s3')">Landing Page</a>
+              <a class="nav-link" @click.prevent="scrollToTop('#s4')">UIUX</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" @click.prevent="scrollToTop('#s4')">UI/UX</a>
+              <a class="nav-link" @click.prevent="scrollToTop('#s3')">Landing Page</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" @click.prevent="scrollToTop('#s7')">Product Design</a>
+            </li> -->
             <!-- <li class="nav-item">
               <a class="nav-link" @click.prevent="scrollToTop('#s6')">Marketing Graphics</a>
             </li> -->
@@ -145,13 +151,41 @@
         </div>
     </section> -->
     <section class="s5" id="s5">
-      <h1 class="secTitle">Campaigns</h1>
+      <h1 class="secTitle">Marketing Design</h1>
       <div class="project" v-for="(i,key) in designProjects" :key="i">
         <!-- text -->
         <div class="secTextVisual">
           <h2 class="projectTitle">Project {{key+1}}</h2>
           <p>{{i.chName}}<br><span>{{i.name}}</span></p>
-                    <div class="skillWrap">
+          <div class="skillWrap">
+            <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
+          </div>
+          <!-- icon -->
+        </div>
+        <!-- banner -->
+        <div class="bannerVisual">
+          <!-- Swiper -->
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="(img, key) in i.img" :key="key">
+                <img :src="img" :alt="i.name + ' 設計圖片 ' + (key+1)" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s8" id="s8">
+      <h1 class="secTitle">Print Design</h1>
+      <div class="project" v-for="(i,key) in printProjects" :key="i">
+        <!-- text -->
+        <div class="secTextVisual">
+          <h2 class="projectTitle">Project {{key+1}}</h2>
+          <p>{{i.chName}}<br><span>{{i.name}}</span></p>
+          <div class="skillWrap">
             <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
           </div>
           <!-- icon -->
@@ -208,6 +242,34 @@
         </div>
       </div>
     </section>
+    <section class="s4" id="s4">
+      <h1 class="secTitle">UIUX</h1>
+      <div class="project" v-for="(i,key) in websiteDesign" :key="i">
+        <!-- text -->
+        <div class="secTextUiux">
+          <h2 class="projectTitle">Project {{key+1}}</h2>
+          <p>{{i.chName}}<br><span>{{i.name}}</span></p>
+          <!-- icon -->
+          <a target="_blank" :href=i.webUrl>
+            <label :class="`uiuxBut uiuxBut${key+1}`">see more</label>
+          </a>
+        </div>
+        <!-- banner -->
+        <div class="bannerUiux">
+          <!-- Swiper -->
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" v-for="(img, key) in i.img" :key="key">
+                <img :src="img" :alt="i.name + ' 設計圖片 ' + (key+1)" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="s3" id="s3">
       <h1 class="secTitle">Landing Page</h1>
       <div class="project" v-for="(i,key) in LpProjects" :key="i">
@@ -237,25 +299,20 @@
         </div>
       </div>
     </section>
-    <section class="s4" id="s4">
-      <h1 class="secTitle">UI/UX</h1>
-      <div class="project" v-for="(i,key) in uiux" :key="i">
-        <!-- text -->
-        <div class="secTextUiux">
-          <h2 class="projectTitle">Project {{key+1}}</h2>
+    <!-- <section class="s7" id="s7">
+      <h1 class="secTitle">Product Design</h1>
+      <div class="project" v-for="(i,key) in industrialProjects" :key="i">
+        <div class="secTextVisual">
           <p>{{i.chName}}<br><span>{{i.name}}</span></p>
-          <!-- icon -->
-          <a target="_blank" :href=i.webUrl>
-            <label :class="`uiuxBut uiuxBut${key+1}`">see more</label>
-          </a>
+          <div class="skillWrap">
+            <label v-for="(skill,key) in i.skills" :key="i + 'skill'">{{ skill }}</label>
+          </div>
         </div>
-        <!-- banner -->
-        <div class="bannerUiux">
-          <!-- Swiper -->
+        <div class="bannerVisual">
           <div class="swiper mySwiper1">
             <div class="swiper-wrapper">
               <div class="swiper-slide" v-for="(img, key) in i.img" :key="key">
-                <img :src="img" :alt="i.name + ' UIUX 設計圖片 ' + (key+1)" />
+                <img :src="img" :alt="i.name + ' 設計圖片 ' + (key+1)" />
               </div>
             </div>
             <div class="swiper-button-next"></div>
@@ -264,7 +321,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- <section class="s6" id="s6">
       <h1 class="secTitle">Marketing Graphics</h1>
       <div class="swiper mySwiper2">
