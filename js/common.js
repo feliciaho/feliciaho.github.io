@@ -72,15 +72,15 @@ const App = {
         },
       ],
       landingPage: [
-        {
-          chName: "彩虹島活動頁",
-          name: "Latale: Landing Page Website Development",
-          skills: ["Pug", "SASS", "JQuery", "Gulp", "CICD"],
-          webUrl:
-            "https://landing.mangot5.com/template/la/event/240711_invernell/index.html",
-          githubUrl: "https://github.com/feliciaho/240711_invernell",
-          img: "images/lataleBanner.jpg",
-        },
+        // {
+        //   chName: "彩虹島活動頁",
+        //   name: "Latale: Landing Page Website Development",
+        //   skills: ["Pug", "SASS", "JQuery", "Gulp", "CICD"],
+        //   webUrl:
+        //     "https://landing.mangot5.com/template/la/event/240711_invernell/index.html",
+        //   githubUrl: "https://github.com/feliciaho/240711_invernell",
+        //   img: "images/lataleBanner.jpg",
+        // },
         {
           chName: "巨商活動頁",
           name: "Gersang: Landing Page Website Development",
@@ -98,15 +98,15 @@ const App = {
           githubUrl: "https://github.com/feliciaho/250113_anniversary",
           img: "images/xaBanner.jpg",
         },
-        {
-          chName: "失落的方舟活動頁開發",
-          name: "LostArk: Landing Page Website Development",
-          skills: ["Pug", "SASS", "jQuery", "Vue", "Gulp", "CICD"],
-          webUrl:
-            "https://landing.mangot5.com/template/lostark/event/250327_pletze/index.html",
-          githubUrl: "https://github.com/feliciaho/250327_pletze",
-          img: "images/lostarkBanner.jpg",
-        },
+        // {
+        //   chName: "失落的方舟活動頁開發",
+        //   name: "LostArk: Landing Page Website Development",
+        //   skills: ["Pug", "SASS", "jQuery", "Vue", "Gulp", "CICD"],
+        //   webUrl:
+        //     "https://landing.mangot5.com/template/lostark/event/250327_pletze/index.html",
+        //   githubUrl: "https://github.com/feliciaho/250327_pletze",
+        //   img: "images/lostarkBanner.jpg",
+        // },
         {
           chName: "夏普左右開冰箱活動頁",
           name: "Sharpe: Landing Page Website Development",
@@ -282,6 +282,7 @@ const App = {
             "images/industrial/03.jpg",
             "images/industrial/04.jpg",
             "images/industrial/05.jpg",
+            "images/industrial/06.jpeg",
           ],
           skills: [
             "Photoshop",
