@@ -103,7 +103,7 @@
               <a class="nav-link" @click.prevent="scrollToTop('#s8')">Print Design</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" @click.prevent="scrollToTop('#s2')">Websites</a>
+              <a class="nav-link" @click.prevent="scrollToTop('#s2')">Official Website</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" @click.prevent="scrollToTop('#s4')">UIUX</a>
@@ -152,7 +152,7 @@
     </section> -->
     <section class="s5" id="s5">
       <h1 class="secTitle">Marketing Design</h1>
-      <div class="project" v-for="(i,key) in designProjects" :key="i">
+      <div class="project" v-for="(i,key) in marketingDesign" :key="i">
         <!-- text -->
         <div class="secTextVisual">
           <h2 class="projectTitle">Project {{key+1}}</h2>
@@ -180,7 +180,7 @@
     </section>
     <section class="s8" id="s8">
       <h1 class="secTitle">Print Design</h1>
-      <div class="project" v-for="(i,key) in printProjects" :key="i">
+      <div class="project" v-for="(i,key) in printDesign" :key="i">
         <!-- text -->
         <div class="secTextVisual">
           <h2 class="projectTitle">Project {{key+1}}</h2>
@@ -207,8 +207,8 @@
       </div>
     </section>
     <section class="s2" id="s2">
-      <h1 class="secTitle">Websites</h1>
-      <div class="project" v-for="(i,key) in officialProjects" :key="i">
+      <h1 class="secTitle">Official Website</h1>
+      <div class="project" v-for="(i,key) in officialWebsites" :key="i">
         <!-- text -->
         <div class="secText">
           <p>{{i.chName}}<br><span>{{i.name}}</span></p>
@@ -272,7 +272,7 @@
     </section>
     <section class="s3" id="s3">
       <h1 class="secTitle">Landing Page</h1>
-      <div class="project" v-for="(i,key) in LpProjects" :key="i">
+      <div class="project" v-for="(i,key) in landingPage" :key="i">
         <!-- text -->
         <div class="secText">
           <p>{{i.chName}}<br><span>{{i.name}}</span></p>
@@ -301,7 +301,7 @@
     </section>
     <!-- <section class="s7" id="s7">
       <h1 class="secTitle">Product Design</h1>
-      <div class="project" v-for="(i,key) in industrialProjects" :key="i">
+      <div class="project" v-for="(i,key) in industrialDesign" :key="i">
         <div class="secTextVisual">
           <p>{{i.chName}}<br><span>{{i.name}}</span></p>
           <div class="skillWrap">

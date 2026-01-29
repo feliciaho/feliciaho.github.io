@@ -33,7 +33,7 @@ const App = {
           ],
         },
       ],
-      officialProjects: [
+      officialWebsites: [
         {
           chName: "民宿訂房網頁設計與開發",
           name: "Hostel Booking Website UIUX Design & Development",
@@ -42,7 +42,7 @@ const App = {
             "Figma MCP to Crusor",
             "HTML",
             "SASS",
-            "javascript",
+            "Javascript",
             "RESTful API",
             "Vue",
             "Vite",
@@ -54,9 +54,9 @@ const App = {
           img: "images/bookingBanner.jpg",
         },
         {
-          chName: "食譜訂房網頁設計與開發",
+          chName: "食譜網頁設計與開發",
           name: "Recipe Website Design & Development",
-          skills: ["HTML", "SASS", "javascript", "RESTful API", "Vue", "Vite"],
+          skills: ["HTML", "SASS", "Javascript", "RESTful API", "Vue", "Vite"],
           webUrl: "https://feliciaho.github.io/recipeWeb_new/#/homeView",
           githubUrl: "https://github.com/feliciaho/recipeWeb_new",
           figma: false,
@@ -65,17 +65,17 @@ const App = {
         {
           chName: "異象回聲官網",
           name: "EOV: Official Website Development",
-          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
+          skills: ["Pug", "SASS", "JQuery", "Gulp", "CICD"],
           webUrl: "https://eov.mangot5.com/eov/index",
           githubUrl: "https://github.com/feliciaho/eov",
           img: "images/eovBanner.png",
         },
       ],
-      LpProjects: [
+      landingPage: [
         {
           chName: "彩虹島活動頁",
           name: "Latale: Landing Page Website Development",
-          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
+          skills: ["Pug", "SASS", "JQuery", "Gulp", "CICD"],
           webUrl:
             "https://landing.mangot5.com/template/la/event/240711_invernell/index.html",
           githubUrl: "https://github.com/feliciaho/240711_invernell",
@@ -84,7 +84,7 @@ const App = {
         {
           chName: "巨商活動頁",
           name: "Gersang: Landing Page Website Development",
-          skills: ["Pug", "SASS", "jQuery", "Gulp", "CICD"],
+          skills: ["Pug", "SASS", "JQuery", "Gulp", "CICD"],
           webUrl:
             "https://landing.mangot5.com/template/gs/event/240712_thunderroar/index.html",
           githubUrl: "https://github.com/feliciaho/240712_thunderroar",
@@ -110,7 +110,7 @@ const App = {
         {
           chName: "夏普左右開冰箱活動頁",
           name: "Sharpe: Landing Page Website Development",
-          skills: ["HTML", "CSS", "jQuery"],
+          skills: ["HTML", "CSS", "JQuery"],
           webUrl: "https://tw.sharp/refrigerator/2511event_dualdoor/index.html",
           githubUrl: "https://github.com/feliciaho/202511_refrigerator_SP",
           img: "images/sharpBanner.jpg",
@@ -162,7 +162,7 @@ const App = {
           ],
         },
       ],
-      designProjects: [
+      marketingDesign: [
         {
           chName: "《傳說對決》令月「墮天碎冠」造型行銷設計",
           name: "Arena of Valor: Hero Skin Marketing Design",
@@ -175,9 +175,9 @@ const App = {
             "images/aovYue/06.jpg",
           ],
           skills: [
-            "photoshop",
-            "illustrator",
-            "nano Banana",
+            "Photoshop",
+            "Illustrator",
+            "Nano Banana",
           ],
         },
         {
@@ -188,8 +188,8 @@ const App = {
             "images/mapleStory/02.jpg",
           ],
           skills: [
-            "photoshop",
-            "illustrator",
+            "Photoshop",
+            "Illustrator",
           ],
         },
         {
@@ -203,11 +203,11 @@ const App = {
             "images/lostark/05.jpg",
           ],
           skills: [
-            "photoshop",
-            "illustrator",
-            "midjourney",
-            "leonardo.ai",
-            "playground ai",
+            "Photoshop",
+            "Illustrator",
+            "Midjourney",
+            "Leonardo.ai",
+            "Playground ai",
           ],
         },
         {
@@ -221,11 +221,11 @@ const App = {
 
           ],
           skills: [
-            "photoshop",
-            "illustrator",
-            "midjourney",
-            "leonardo.ai",
-            "playground ai",
+            "Photoshop",
+            "Illustrator",
+            "Midjourney",
+            "Leonardo.ai",
+            "Playground ai",
           ],
         },
         {
@@ -236,12 +236,12 @@ const App = {
             "images/clothes/02.jpg",
           ],
           skills: [
-            "photoshop",
-            "illustrator",
+            "Photoshop",
+            "Illustrator",
           ],
         },
       ],
-      printProjects: [
+      printDesign: [
         {
           chName: "《AVA 戰地之王》線下賽：印刷物與數位視覺設計",
           name: "A.V.A Offline Tournament: Print & Digital Media Design",
@@ -253,8 +253,8 @@ const App = {
             "images/avaPrint/05.jpg",
           ],
           skills: [
-            "photoshop",
-            "illustrator",
+            "Photoshop",
+            "Illustrator",
           ],
         },
         {
@@ -267,12 +267,12 @@ const App = {
             "images/auditionPrint/04.jpg",
           ],
           skills: [
-            "photoshop",
-            "illustrator",
+            "Photoshop",
+            "Illustrator",
           ],
         },
       ],
-      industrialProjects: [
+      industrialDesign: [
         {
           chName: "PANRADISE 眼睛舒緩套組：產品開發與視覺設計",
           name: "PANRADISE: Eye Relief Set Product Design & Visualization",
@@ -284,10 +284,10 @@ const App = {
             "images/industrial/05.jpg",
           ],
           skills: [
-            "photoshop",
-            "illustrator",
-            "keyshot",
-            "solidworks",
+            "Photoshop",
+            "Illustrator",
+            "Keyshot",
+            "Solidworks",
           ],
         },
       ],
