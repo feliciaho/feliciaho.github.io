@@ -162,7 +162,7 @@ const App = {
           ],
         },
       ],
-      marketingDesign: [
+      visualDesign: [
         {
           chName: "《傳說對決》令月「墮天碎冠」造型行銷設計",
           name: "Arena of Valor: Hero Skin Marketing Design",
