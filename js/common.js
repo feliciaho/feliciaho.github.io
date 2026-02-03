@@ -82,6 +82,15 @@ const App = {
         //   img: "images/lataleBanner.jpg",
         // },
         {
+          chName: "失落的方舟活動頁開發",
+          name: "LostArk: Landing Page Website Development",
+          skills: ["Pug", "SASS", "jQuery", "Vue", "Gulp", "CICD"],
+          webUrl:
+            "https://landing.mangot5.com/template/lostark/event/250327_pletze/index.html",
+          githubUrl: "https://github.com/feliciaho/250327_pletze",
+          img: "images/lostarkBanner.jpg",
+        },
+        {
           chName: "巨商活動頁",
           name: "Gersang: Landing Page Website Development",
           skills: ["Pug", "SASS", "JQuery", "Gulp", "CICD"],
@@ -98,15 +107,6 @@ const App = {
           githubUrl: "https://github.com/feliciaho/250113_anniversary",
           img: "images/xaBanner.jpg",
         },
-        // {
-        //   chName: "失落的方舟活動頁開發",
-        //   name: "LostArk: Landing Page Website Development",
-        //   skills: ["Pug", "SASS", "jQuery", "Vue", "Gulp", "CICD"],
-        //   webUrl:
-        //     "https://landing.mangot5.com/template/lostark/event/250327_pletze/index.html",
-        //   githubUrl: "https://github.com/feliciaho/250327_pletze",
-        //   img: "images/lostarkBanner.jpg",
-        // },
         {
           chName: "夏普左右開冰箱活動頁",
           name: "Sharpe: Landing Page Website Development",
